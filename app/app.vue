@@ -4,9 +4,9 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Teshane Crawford is a software engineer based in New York City.'
-    }
-  ]
+      content: 'Teshane Crawford is a software engineer based in New York City.',
+    },
+  ],
 })
 </script>
 
