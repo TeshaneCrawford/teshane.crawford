@@ -8,9 +8,9 @@ export default defineNuxtConfig({
 
   typescript: {
     typeCheck: true,
-    strict: true
+    strict: true,
   },
-  modules: ["@nuxt/eslint", "@unocss/nuxt"],
+  modules: ['@nuxt/eslint', '@unocss/nuxt'],
 
   // https://unocss.com/docs/nuxt
   css: [
@@ -22,9 +22,9 @@ export default defineNuxtConfig({
   eslint: {
     config: {
       stylistic: {
-        quotes: 'single'
+        quotes: 'single',
       },
       // standalone: false,
-    }
-  }
+    },
+  },
 })
