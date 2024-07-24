@@ -1,4 +1,3 @@
-import { NuxtLoadingIndicator } from '../.nuxt/components';
 <script setup lang="ts">
 useHead({
   title: 'Teshane Crawford - Software Engineer',

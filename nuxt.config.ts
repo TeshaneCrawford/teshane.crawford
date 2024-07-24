@@ -10,14 +10,21 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true
   },
-  modules: ["@nuxt/eslint"],
+  modules: ["@nuxt/eslint", "@unocss/nuxt"],
+
+  // https://unocss.com/docs/nuxt
+  css: [
+    // '@/assets/css/main.css',
+    '@unocss/reset/tailwind.css',
+  ],
 
   // https://eslint.nuxt.com
   eslint: {
     config: {
       stylistic: {
         quotes: 'single'
-      }
+      },
+      // standalone: false,
     }
   }
 })
