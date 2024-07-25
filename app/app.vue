@@ -12,12 +12,16 @@ useHead({
 
 <template>
   <body class="font-sans antialiased text-gray-6 dark:text-gray-2">
-    <NuxtRouteAnnouncer>
-      <template #default="{ message }">
-        <p>{{ message }} was loaded.</p>
-      </template>
-    </NuxtRouteAnnouncer>
-    <NuxtLoadingIndicator />
-    <NuxtPage />
+    <div>
+      <NuxtRouteAnnouncer>
+        <template #default="{ message }">
+          <p>{{ message }} was loaded.</p>
+        </template>
+      </NuxtRouteAnnouncer>
+      <NuxtLoadingIndicator />
+      <main class="of-x-hidden px-7 py-10 min-h-dvh">
+        <NuxtPage />
+      </main>
+    </div>
   </body>
 </template>
