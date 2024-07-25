@@ -11,7 +11,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <body class="font-sans antialiased text-gray-6 dark:text-gray-2">
     <NuxtRouteAnnouncer>
       <template #default="{ message }">
         <p>{{ message }} was loaded.</p>
@@ -19,5 +19,5 @@ useHead({
     </NuxtRouteAnnouncer>
     <NuxtLoadingIndicator />
     <NuxtPage />
-  </div>
+  </body>
 </template>
