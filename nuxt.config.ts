@@ -10,11 +10,11 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true,
   },
-  modules: ['@nuxt/eslint', '@unocss/nuxt'],
+  modules: ['@nuxt/eslint', '@unocss/nuxt', '@vueuse/nuxt', '@nuxtjs/color-mode'],
 
   // https://unocss.com/docs/nuxt
   css: [
-    // '@/assets/css/main.css',
+    '@/assets/css/main.css',
     '@unocss/reset/tailwind.css',
   ],
 
@@ -26,5 +26,12 @@ export default defineNuxtConfig({
       },
       // standalone: false,
     },
+  },
+
+  // https://color-mode.nuxtjs.org
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: '',
   },
 })
