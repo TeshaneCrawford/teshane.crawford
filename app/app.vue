@@ -19,7 +19,7 @@ useHead({
         </template>
       </NuxtRouteAnnouncer>
       <NuxtLoadingIndicator />
-      <!-- <AppBgNoise /> -->
+      <AppBgNoise />
       <AppNavbar />
       <main class="of-x-hidden px-7 py-10 min-h-dvh">
         <NuxtPage />
