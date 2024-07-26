@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
     '@nuxt/content',
+    '@nuxt/icon',
   ],
 
   // https://unocss.com/docs/nuxt
@@ -39,5 +40,10 @@ export default defineNuxtConfig({
     preference: 'system',
     fallback: 'light',
     classSuffix: '',
+  },
+
+  experimental: {
+    componentIslands: true,
+    payloadExtraction: true,
   },
 })
