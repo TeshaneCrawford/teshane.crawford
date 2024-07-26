@@ -1,13 +1,20 @@
-<!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
-const props = defineProps<{
-  msg: string
-}>()
+useHead({
+  title: 'Teshane Crawford - Software Engineer',
+  meta: [
+    {
+      name: 'description',
+      content: 'Teshane Crawford is a software engineer based in New York City.',
+    },
+  ],
+})
 </script>
 
 <template>
   <div>
-    <h1>{{ props.msg }}</h1>
+    <h1>
+      Teshane Crawford - Software Engineer
+    </h1>
   </div>
 </template>
 

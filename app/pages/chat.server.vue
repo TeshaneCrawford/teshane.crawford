@@ -1,6 +1,16 @@
 <script setup lang="ts">
 const route = useRoute()
 const { data: doc } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
+
+useHead({
+  title: 'Chat - Teshane Crawford',
+  meta: [
+    {
+      name: 'description',
+      content: 'Chat with Teshane Crawford.',
+    },
+  ],
+})
 </script>
 
 <template>
