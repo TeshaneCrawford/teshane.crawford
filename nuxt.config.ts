@@ -10,7 +10,13 @@ export default defineNuxtConfig({
     typeCheck: true,
     strict: true,
   },
-  modules: ['@nuxt/eslint', '@unocss/nuxt', '@vueuse/nuxt', '@nuxtjs/color-mode'],
+  modules: [
+    '@nuxt/eslint',
+    '@unocss/nuxt',
+    '@vueuse/nuxt',
+    '@nuxtjs/color-mode',
+    '@nuxt/content',
+  ],
 
   // https://unocss.com/docs/nuxt
   css: [
