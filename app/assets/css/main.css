@@ -191,3 +191,7 @@ html.dark {
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
   }
+
+  @view-transition {
+    navigation: auto; /* enabled! */
+  }

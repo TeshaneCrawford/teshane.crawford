@@ -46,5 +46,6 @@ export default defineNuxtConfig({
   experimental: {
     componentIslands: true,
     payloadExtraction: true,
+    viewTransition: true,
   },
 })
