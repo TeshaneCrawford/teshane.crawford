@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    Page: tools
+    <ToolsSection />
   </div>
 </template>
 

@@ -59,7 +59,7 @@ defineProps<{
           fsc
           gap-1
         >
-          <span
+          <div
             h-3
             w-3
             rounded-full
