@@ -31,6 +31,7 @@
     "@unocss/nuxt": "^0.61.5",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
+    "minisearch": "^7.1.0",
     "typescript": "^5.5.4",
     "vue-tsc": "^2.0.28"
   }
