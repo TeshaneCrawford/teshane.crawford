@@ -4,8 +4,11 @@
   <div>
     <h1 class="font-bold text-6xl mb-6">
       Teshane Crawford
-      <span class="font-medium text-sm flex flex-wrap inline-flex items-center">
+      <!-- <span class="font-medium text-sm flex flex-wrap inline-flex items-center">
         Software Engineer <span class="mx-2">•</span> 🇯🇲 living in 🇺🇸 🗽 New York, USA
+      </span> -->
+      <span class="font-medium text-sm flex flex-wrap inline-flex items-center">
+        Software Engineer <span class="mx-2">•</span> 🇯🇲 living in Portland, JA
       </span>
     </h1>
     <p class="first-letter">
