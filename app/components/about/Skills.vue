@@ -29,12 +29,20 @@ const skills = [
     icon: 'i-logos-react',
   },
   {
+    title: 'Angular',
+    icon: 'i-logos-angular-icon',
+  },
+  {
     title: 'Node.js',
-    icon: 'i-logos-nodejs',
+    icon: 'i-logos-nodejs-icon',
   },
   {
     title: 'Azure',
     icon: 'i-logos-azure-icon',
+  },
+  {
+    title: 'Microsoft SQL Server',
+    icon: 'i-devicon:microsoftsqlserver',
   },
   {
     title: 'PostgreSQL',
@@ -42,27 +50,31 @@ const skills = [
   },
   {
     title: 'CSS',
-    icon: 'i-logos-css-3',
+    icon: 'i-devicon:css3',
   },
   {
     title: 'Git',
-    icon: 'i-logos-git',
+    icon: 'i-logos-git-icon',
+  },
+  {
+    title: 'Docker',
+    icon: 'i-logos-docker-icon',
   },
 ]
 </script>
 
 <template>
-  <section>
-    <div class="flex flex-wrap gap-4">
+  <section class="flex flex-col gap-y-2 ">
+    <div class="inline-flex flex-wrap gap-2">
       <div
         v-for="skill in skills"
         :key="skill.icon"
-        class="border border-rounded p-1 bg-white/5"
+        class="gap-x-1.5 py-1.5 px-3 rounded-lg inline-flex items-center text-xs border border-gray-2 dark:border-gray-8 bg-gray-100/95 text-gray-800 dark:bg-neutral-500/20 dark:text-neutral-400 hover:bg-gray-200/80 dark:hover:bg-neutral-500/30"
       >
         <span class="flex gap-2 justify-center">
           <icon
             :name="skill.icon"
-            class="w-6 h-6"
+            class="w-4 h-4"
           />
           <p class="font-medium font-mono">{{ skill.title }}</p>
         </span>
