@@ -27,15 +27,24 @@ importers:
         specifier: latest
         version: 3.4.33(typescript@5.5.4)
     devDependencies:
+      '@iconify-json/devicon':
+        specifier: ^1.1.49
+        version: 1.1.49
       '@iconify-json/fluent':
         specifier: ^1.1.59
         version: 1.1.59
       '@iconify-json/line-md':
         specifier: ^1.1.38
         version: 1.1.38
+      '@iconify-json/logos':
+        specifier: ^1.1.43
+        version: 1.1.43
       '@iconify-json/ri':
         specifier: ^1.1.21
         version: 1.1.21
+      '@iconify-json/simple-icons':
+        specifier: ^1.1.111
+        version: 1.1.111
       '@iconify-json/uil':
         specifier: ^1.1.8
         version: 1.1.8
@@ -737,14 +746,23 @@ packages:
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
 
+  '@iconify-json/devicon@1.1.49':
+    resolution: {integrity: sha512-q53rzEhRZBxHtYT3mE13BKPq+5MS5rR8M1k8OoIjWf5FT8R6VjxgvFFLCUQOYSeLc8Pp9uDDZmV7j7OOh+/bFQ==}
+
   '@iconify-json/fluent@1.1.59':
     resolution: {integrity: sha512-4gihRqVI4aVfx26VOk0LAcjLkii7DWsdb1AP0NXRQ/fZ5VJOIqf7NdVfz5K01w+4ayDLl+aDdp7X1zlCh2kOwg==}
 
   '@iconify-json/line-md@1.1.38':
     resolution: {integrity: sha512-W+y4G/7QqO1sTGUypwsm0UUwjbGt/BjRg4kZylek7BwH5EG8f1uUJgcZwRASjsH4xGL+LVQbw6FAGbQ1UHNCow==}
 
+  '@iconify-json/logos@1.1.43':
+    resolution: {integrity: sha512-UtvL1yDHUr9dl1Tqihh6K9m5dmbYKOYyLf3i9aKhymSW76QjOCGjpgQc0PQ4GJCAdU1cAMu+WO61TgPxdonrlg==}
+
   '@iconify-json/ri@1.1.21':
     resolution: {integrity: sha512-ssU2CRaB4T83Q3cncCZtITholhYkH6gEL5XLmdMII6Xzn8bTCpDCkt+HdX4URc24uUMD0PGIaNLJUIAgdfLMjQ==}
+
+  '@iconify-json/simple-icons@1.1.111':
+    resolution: {integrity: sha512-9+d69tCopShQB4a/mlQjP6uqkzJnDfeLNVwly11QMvucLIFfCG08xBXcWSyPCnfsR2bX/G50e43LaUXubNyYuw==}
 
   '@iconify-json/uil@1.1.8':
     resolution: {integrity: sha512-zkWB8XImzb1gfi5kN9xAfDXF5OqzxbKvtZq9xRUplEWEJYOoDB1RpbbQpCwJQ41j8Nf0ag0LFJr++qhYmvxftQ==}
@@ -5416,6 +5434,10 @@ snapshots:
 
   '@humanwhocodes/object-schema@2.0.3': {}
 
+  '@iconify-json/devicon@1.1.49':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/fluent@1.1.59':
     dependencies:
       '@iconify/types': 2.0.0
@@ -5424,7 +5446,15 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
+  '@iconify-json/logos@1.1.43':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify-json/ri@1.1.21':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/simple-icons@1.1.111':
     dependencies:
       '@iconify/types': 2.0.0
 
