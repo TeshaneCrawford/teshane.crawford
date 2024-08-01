@@ -76,7 +76,7 @@ const skills = [
             :name="skill.icon"
             class="w-4 h-4"
           />
-          <p class="font-medium font-mono">{{ skill.title }}</p>
+          <p class="font-medium font-dank">{{ skill.title }}</p>
         </span>
       </div>
     </div>
