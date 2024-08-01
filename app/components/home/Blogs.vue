@@ -23,7 +23,7 @@ const feed = 'https://dev.to/feed/teshanecrawford'
           <div class="flex items-center justify-center w-full py-5">
             <AppButton
               text="View All My Writing"
-              link="/blog"
+              link="/blogs"
             />
           </div>
         </div>
