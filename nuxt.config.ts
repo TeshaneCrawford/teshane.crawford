@@ -23,6 +23,7 @@ export default defineNuxtConfig({
   // https://unocss.com/docs/nuxt
   css: [
     '@/assets/css/main.css',
+    '@/assets/css/font.css',
     '@unocss/reset/tailwind.css',
   ],
 
