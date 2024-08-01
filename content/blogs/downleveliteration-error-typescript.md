@@ -31,7 +31,7 @@ Let's look at the solutions to resolve this error:
 
 To address the error, you can make use of the '--downlevelIteration' flag during compilation. This flag enables downlevel iteration for iterating over strings using a for...of loop. Here's how you can use it:
 
-``` bash
+``` bash [command.bash]
 tsc --downlevelIteration your-file.ts
 
 ```
