@@ -133,6 +133,8 @@ const { y: scroll } = useWindowScroll()
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
+  view-transition-name: logo;
+  /* contain: layout; */
 }
 
 .nav {

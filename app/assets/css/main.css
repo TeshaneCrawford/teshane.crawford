@@ -131,24 +131,64 @@ html.dark {
     .slide-enter-content > *:nth-child(20) { --enter-stage: 20 !important; }
   }
 
-  ::view-transition-old(root),
-  ::view-transition-new(root) {
-    animation: none;
-    mix-blend-mode: normal;
+  /* View transition implimentation, experimental */
+
+  /* @keyframes fade-in {
+    from { opacity: 0; }
   }
+  
+  @keyframes fade-out {
+    to { opacity: 0; }
+  }
+  
+  @keyframes slide-from-right {
+    from { transform: translateX(30px); }
+  }
+  
+  @keyframes slide-to-left {
+    to { transform: translateX(-30px); }
+  }
+  
   ::view-transition-old(root) {
-    z-index: 1;
+    animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+      300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
   }
+  
   ::view-transition-new(root) {
-    z-index: 9999;
+    animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+      300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
+  } */
+
+  @keyframes fade-in {
+    from { opacity: 0; }
   }
-  .dark::view-transition-old(root) {
-    z-index: 9999;
+  
+  @keyframes fade-out {
+    to { opacity: 0; }
   }
-  .dark::view-transition-new(root) {
-    z-index: 1;
+  
+  @keyframes slide-from-right {
+    from { transform: translateX(30px); }
+  }
+  
+  @keyframes slide-to-left {
+    to { transform: translateX(-30px); }
+  }
+  
+  ::view-transition-old(root) {
+    animation: 90ms cubic-bezier(0.4, 0, 1, 1) both fade-out,
+      300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-to-left;
+  }
+  
+  ::view-transition-new(root) {
+    animation: 210ms cubic-bezier(0, 0, 0.2, 1) 90ms both fade-in,
+      300ms cubic-bezier(0.4, 0, 0.2, 1) both slide-from-right;
   }
 
+  @view-transition {
+    navigation: auto; /* enabled! */
+    /* types: fade, forwards; */
+  }
 
   /* Overrides Floating Vue */
   .v-popper--theme-dropdown .v-popper__inner,
@@ -190,8 +230,4 @@ html.dark {
     margin-top: 0;
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
-  }
-
-  @view-transition {
-    navigation: auto; /* enabled! */
   }
