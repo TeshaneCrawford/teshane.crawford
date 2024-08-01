@@ -18,7 +18,7 @@ defineProps<{
     <div class="absolute inset-0 z-20 w-full h-full duration-300 ease-out bg-white border border-dashed dark:bg-neutral-950/95 rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:-translate-x-1 group-hover:-translate-y-1" />
     <div class="absolute inset-0 z-10 w-full h-full duration-300 ease-out border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1" />
     <div class="relative z-30 duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1">
-      <h2 class="flex items-center mb-3">
+      <h2 class="flex items-center mb-3 font-medium">
         <NuxtLink :to="path">
           {{ title }}
         </NuxtLink>
