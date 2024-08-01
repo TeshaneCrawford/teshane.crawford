@@ -61,6 +61,41 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
+  content: {
+    highlight: {
+      theme: {
+        default: 'snazzy-light',
+        dark: 'dracula-soft',
+      },
+      langs: [
+        'js',
+        'ts',
+        'c#',
+        'csharp',
+        'cs',
+        'python',
+        'py',
+        'java',
+        'vue',
+        'kotlin',
+        'jsx',
+        'tsx',
+        'css',
+        'scss',
+        'sass',
+        'html',
+        'html-derivative',
+        'xml',
+        'bash',
+        'md',
+        'mdc',
+        'json',
+      ],
+    },
+    locales: ['en', 'fr'],
+    defaultLocale: 'en',
+  },
+
   experimental: {
     componentIslands: true,
     payloadExtraction: true,
