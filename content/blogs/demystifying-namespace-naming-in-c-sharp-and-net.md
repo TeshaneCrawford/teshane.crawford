@@ -20,7 +20,7 @@ Namespaces play a crucial role in organizing code within software projects, prov
 
 When naming namespaces, the primary goal is to ensure that the namespace's purpose is immediately apparent to developers using the framework. To achieve this, Microsoft's Framework Design Guidelines offer a naming template:
 
-``` csharp
+``` csharp [e.g.]
 <Company>.(<Product>|<Technology>)[.<Feature>][.<Subnamespace>]
 ```
 
@@ -38,7 +38,7 @@ Here's a breakdown of the components:
 
 For instance, consider the following examples:
 
-``` csharp
+``` csharp [e.g.]
 Fabrikam.Math
 Litware.Security
 
