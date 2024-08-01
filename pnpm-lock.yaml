@@ -48,6 +48,9 @@ importers:
       '@iconify-json/uil':
         specifier: ^1.1.8
         version: 1.1.8
+      '@iconify-json/vscode-icons':
+        specifier: ^1.1.36
+        version: 1.1.36
       '@nuxtjs/color-mode':
         specifier: ^3.4.2
         version: 3.4.2(magicast@0.3.4)(rollup@4.19.0)
@@ -766,6 +769,9 @@ packages:
 
   '@iconify-json/uil@1.1.8':
     resolution: {integrity: sha512-zkWB8XImzb1gfi5kN9xAfDXF5OqzxbKvtZq9xRUplEWEJYOoDB1RpbbQpCwJQ41j8Nf0ag0LFJr++qhYmvxftQ==}
+
+  '@iconify-json/vscode-icons@1.1.36':
+    resolution: {integrity: sha512-gObMrGZJhxeqhmjoW8rJ85HDUnssl2GwEPVd+9+Zk+/USagyKz75MgMGGomsho+XhYWlrA1IRgs2OyrFGELuUA==}
 
   '@iconify/collections@1.0.443':
     resolution: {integrity: sha512-vMf9xBQF9oTKShHuxkbsN8ZPP9rKHe83FavJmVBQZsUQ0VkUMZiW7WjlWyd+OZpg79RFg3IvtjSQnoLAffw5Xw==}
@@ -5459,6 +5465,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/uil@1.1.8':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/vscode-icons@1.1.36':
     dependencies:
       '@iconify/types': 2.0.0
 
