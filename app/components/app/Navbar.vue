@@ -54,7 +54,7 @@ const { y: scroll } = useWindowScroll()
           />
         </NuxtLink>
         <NuxtLink
-          to="/blog"
+          to="/blogs"
           title="Blog"
         >
           <span class="lt-md:hidden">Blog</span>
