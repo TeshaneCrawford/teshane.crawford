@@ -16,7 +16,7 @@ const { y: scroll } = useWindowScroll()
       to="/"
       focusable="false"
     >
-      Teshane Crawford
+      T.Crawford
     </NuxtLink>
     <button
       title="Scroll to top"
