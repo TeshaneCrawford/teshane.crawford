@@ -40,7 +40,7 @@ useHead({
             <li>and more...</li>
           </ul>
           <AppButton
-            text="Follow me on 𝕏"
+            text="Get in contact"
             link="https://x.com/TeshaneCrawford"
           />
         </div>
