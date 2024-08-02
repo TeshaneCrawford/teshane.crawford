@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 // const route = useRoute()
-const { data: doc } = await useAsyncData('tools', () => queryContent('/tools/').findOne())
+const { data: doc } = await useLazyAsyncData('tools', () => queryContent('/tools/').findOne())
 
 // const { error } = await useAsyncData('tools', () => queryContent('/tools/').findOne())
 
