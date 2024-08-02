@@ -18,6 +18,8 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/content',
     '@nuxt/icon',
+    '@nuxtjs/seo',
+    '@nuxtjs/sitemap',
   ],
 
   // https://unocss.com/docs/nuxt
@@ -104,6 +106,15 @@ export default defineNuxtConfig({
     locales: ['en', 'fr'],
     defaultLocale: 'en',
   },
+
+  site: {
+    url: 'https://teshanecrawford.com',
+    name: 'Teshane Crawford',
+    description: 'This is my personal website where I share my thoughts and projects.',
+    defaultLocale: 'en',
+  },
+
+  ssr: true,
 
   experimental: {
     componentIslands: true,
