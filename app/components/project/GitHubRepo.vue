@@ -18,8 +18,8 @@ defineProps<{
     hover="bg-gray bg-op-3"
     dark-hover="bg-white bg-op-3"
   >
-    <NuxtLink
-      :to="repo.homepage || repo.html_url"
+    <a
+      :href="repo.homepage || repo.html_url"
       target="_blank"
       flex="~ col gap-3"
       h-full
@@ -27,7 +27,7 @@ defineProps<{
     >
       <h5
         m0
-        fsc
+        flex
         gap-1
         text-sm
       >
@@ -51,12 +51,12 @@ defineProps<{
       </p>
       <p
         m0
-        fsc
+        flex
         gap-4
       >
         <span
           v-if="repo.language"
-          fsc
+          flex
           gap-1
         >
           <div
@@ -67,34 +67,34 @@ defineProps<{
           />
           {{ repo.language }}
         </span>
-        <NuxtLink
+        <a
           v-if="repo.stargazers_count"
           target="_blank"
           decoration-none
-          :to="`https://github.com/${repo.full_name}/stargazers`"
+          :href="`https://github.com/${repo.full_name}/stargazers`"
         >
           <span
             v-if="repo.stargazers_count"
-            fsc
+            flex
             gap-1
           >
             <i i-ri:star-line />
             {{ repo.stargazers_count }}
           </span>
-        </NuxtLink>
-        <NuxtLink
+        </a>
+        <a
           v-if="repo.forks_count"
           target="_blank"
-          :to="`https://github.com/${repo.full_name}/network/members`"
-          fsc
+          :href="`https://github.com/${repo.full_name}/network/members`"
+          flex
           gap-1
           decoration-none
         >
           <i i-carbon:direction-fork />
           {{ repo.forks_count }}
-        </NuxtLink>
+        </a>
       </p>
-    </NuxtLink>
+    </a>
   </article>
 </template>
 
