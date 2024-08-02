@@ -61,7 +61,7 @@ const feed = 'https://dev.to/feed/teshanecrawford'
                 :to="`https://www.inoreader.com/feed/${encodeURIComponent(feed)}`"
               >Inoreader</NuxtLink> or <NuxtLink
                 class="font-bold"
-                to="feed"
+                to="/"
               >RSS</NuxtLink>.
             </p>
             <div class="flex flex-col items-center w-full mt-4 space-y-3">
