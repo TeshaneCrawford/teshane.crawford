@@ -51,6 +51,9 @@ importers:
       '@iconify-json/simple-icons':
         specifier: ^1.1.111
         version: 1.1.111
+      '@iconify-json/twemoji':
+        specifier: ^1.1.15
+        version: 1.1.15
       '@iconify-json/uil':
         specifier: ^1.1.8
         version: 1.1.8
@@ -772,6 +775,9 @@ packages:
 
   '@iconify-json/simple-icons@1.1.111':
     resolution: {integrity: sha512-9+d69tCopShQB4a/mlQjP6uqkzJnDfeLNVwly11QMvucLIFfCG08xBXcWSyPCnfsR2bX/G50e43LaUXubNyYuw==}
+
+  '@iconify-json/twemoji@1.1.15':
+    resolution: {integrity: sha512-ze2CAOwIWBKIP6ih6qMDItasVjRicktl2Qr3/ohZSMToAHm9z3Q6HCwE48eT0+D+uFpGBlNRQ22HHyE5izyhDg==}
 
   '@iconify-json/uil@1.1.8':
     resolution: {integrity: sha512-zkWB8XImzb1gfi5kN9xAfDXF5OqzxbKvtZq9xRUplEWEJYOoDB1RpbbQpCwJQ41j8Nf0ag0LFJr++qhYmvxftQ==}
@@ -5760,6 +5766,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/simple-icons@1.1.111':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/twemoji@1.1.15':
     dependencies:
       '@iconify/types': 2.0.0
 
