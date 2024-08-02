@@ -5,7 +5,7 @@ export default defineAppConfig({
       description: 'Teshane Crawford - Software Engineer',
       domain: 'teshanecrawford.com',
       social: {
-        twitter: 'https://twitter.com/teshanecrawford',
+        twitter: 'https://x.com/TeshaneCrawford',
         github: 'https://github.com/TeshaneCrawford',
       },
     },
