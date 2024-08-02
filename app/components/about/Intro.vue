@@ -72,6 +72,23 @@
         contact me
       </NuxtLink>.
     </p>
+    <p>
+      <a
+        class="group"
+        text-p-r
+        trans
+        hover-op-75
+        href="mailto:crawfordteshane@gmail.com"
+      >
+        Hire Me
+        <i
+          group-hover="ml-1"
+          i-ri:arrow-right-up-line
+          bg-gradient-to-r
+          trans
+        />
+      </a>
+    </p>
   </div>
 </template>
 
