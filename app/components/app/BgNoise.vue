@@ -18,7 +18,7 @@
       filter="url(#pedroduarteisalegend)"
     />
   </svg>
-  <div class="fixed w-full h-24 bg-gray-1/80 blur-[150px]" />
+  <div class="fixed w-full h-24 bg-gray-1/80 dark:bg-gray-6/80 blur-[150px]" />
 </template>
 
 <style scoped></style>
