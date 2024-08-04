@@ -12,7 +12,7 @@ publishedAt: 2023-08-15
 modifiedAt: 2023-08-15
 ---
 
-# Understanding the Difference Between Records and Structs in C #
+# Understanding the Difference Between Records and Structs in C#
 
 In C#, both `records` and `structs` are used to create user-defined types that can contain multiple members. However, they have some key differences that make them suitable for different scenarios. Let's delve into these differences.
 
