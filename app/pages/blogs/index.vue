@@ -1,11 +1,11 @@
 <script setup lang="ts">
 const route = useRoute()
 
-const { data: page, error } = await useAsyncData(route.path, () => queryContent(route.path).findOne())
+const { data: page, error } = await useLazyAsyncData(route.path, () => queryContent(route.path).findOne())
 
 if (error.value) {
   throw createError({
-    statusCode: error.value.statusCode,
+    statusCode: 404,
     message: error.value.message,
     fatal: true,
   })

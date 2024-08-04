@@ -3,7 +3,7 @@ import type { BlogPost } from '~~/types/blog'
 
 const route = useRoute()
 
-const { data: page, error } = await useAsyncData(route.path, () => queryContent<BlogPost>(route.path).findOne())
+const { data: page, error } = await useLazyAsyncData(route.path, () => queryContent<BlogPost>(route.path).findOne())
 const allArticles = await queryContent('blog').sort({ date: -1 }).only(['title', '_path', 'date']).find()
 
 const articleIndex = allArticles.findIndex(a => a._path === route.path)
