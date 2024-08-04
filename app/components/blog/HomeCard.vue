@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { error } = await useAsyncData('blogs', () => queryContent('/blogs/').findOne())
+const { error } = await useLazyAsyncData('blogs', () => queryContent('/blogs/').findOne())
 
 if (error.value) {
   throw createError({
