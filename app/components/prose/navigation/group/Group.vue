@@ -16,7 +16,7 @@ const id = useProseNavGroupId()
         <slot name="title" />
       </div>
       <!-- eslint-disable-next-line vue/valid-v-on -->
-      <Button
+      <button
         v-if="!noDisclosure"
         class="flex items-center gap-2 md:hidden"
         type="button"
@@ -33,7 +33,7 @@ const id = useProseNavGroupId()
           class="i-ri-arrow-right-s-line w-4 h-4 transition ease-in"
           :class="{ 'transform rotate-90': open }"
         />
-      </Button>
+      </button>
     </div>
     <div
       :id="id"
