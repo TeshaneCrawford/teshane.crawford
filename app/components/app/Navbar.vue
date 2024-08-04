@@ -163,7 +163,7 @@ const { y: scroll } = useWindowScroll()
 }
 
 .nav a:hover {
-  opacity: 1;
+  opacity: 0.9;
   text-decoration-color: inherit;
 }
 
