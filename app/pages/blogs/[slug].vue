@@ -18,6 +18,16 @@ if (error.value) {
   })
 }
 
+useSeoMeta({
+  title: page.value?.title,
+  description: page.value?.description,
+  ogTitle: page.value?.title,
+  ogDescription: page.value?.description,
+  ogType: 'article',
+  twitterTitle: page.value?.title,
+  twitterDescription: page.value?.description,
+})
+
 useHead({
   templateParams: {
     subtitle: 'Blog',
@@ -32,6 +42,15 @@ useHead({
     },
   ],
 })
+
+defineOgImageComponent(
+  'BlogPost',
+  {
+    title: page.value?.title,
+    description: page.value?.description,
+    date: toLocaleDateString(page.value?.date),
+  },
+)
 </script>
 
 <template>

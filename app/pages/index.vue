@@ -1,10 +1,11 @@
 <script setup lang="ts">
+defineOgImageComponent('MainOg')
 useHead({
   title: 'Teshane Crawford - Software Engineer',
   meta: [
     {
       name: 'description',
-      content: 'Teshane Crawford is a software engineer based in New York City.',
+      content: 'Teshane Crawford is a software engineer based in New York City. I help companies build better applications.',
     },
   ],
 })

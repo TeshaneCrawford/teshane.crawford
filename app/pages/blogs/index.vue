@@ -11,6 +11,16 @@ if (error.value) {
   })
 }
 
+definePageMeta({
+  path: '/blogs/:page(\\d+)?',
+})
+
+defineOgImageComponent('BlogPost', {
+  title: page.value?.title,
+  description: page.value?.description,
+  date: page.value?.publishedAt,
+})
+
 useHead({
   title: page.value?.title,
   meta: [
