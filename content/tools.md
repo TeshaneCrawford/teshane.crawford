@@ -68,14 +68,18 @@ toolsData:
         label: Material UI
         icon: i-logos-material-ui
         link: "https://mui.com/"
-      - name: Sass
-        label: Sass
-        icon: i-logos-sass
-        link: "https://sass-lang.com/"
+      # - name: Sass
+      #   label: Sass
+      #   icon: i-logos-sass
+      #   link: "https://sass-lang.com/"
+      - name: UnoCSS
+        label: UnoCSS
+        icon: i-logos-unocss
+        link: "https://unocss.dev/"
   - title: Databases
     toolData:
-      - name: MsSQL Server
-        label: MsSQL Server
+      - name: SQL Server
+        label: Microsoft SQL Server
         icon: i-devicon:microsoftsqlserver
         # color: "#CC2927"
         link: "https://www.microsoft.com/en-us/sql-server/sql-server-2019"
@@ -83,10 +87,6 @@ toolsData:
         label: PostgreSQL
         icon: i-logos-postgresql
         link: "https://www.postgresql.org/"
-      - name: MongoDB
-        label: MongoDB
-        icon: i-logos-mongodb-icon
-        link: "https://www.mongodb.com/"
       - name: Supabase
         label: Supabase
         icon: i-logos-supabase-icon
@@ -121,7 +121,7 @@ toolsData:
         label: GitHub
         icon: i-logos-github-icon
         link: "https://github.com"
-      - name: CI/CD
+      - name: GitHub CI/CD
         label: GitHub Actions
         icon: i-logos-github-actions
         link: "https://github.com"
@@ -129,14 +129,18 @@ toolsData:
         label: Sentry
         icon: i-logos-sentry-icon
         link: "https://sentry.io/"
-      - name: Yarn
-        label: Yarn
-        icon: i-logos-yarn
-        link: "https://yarnpkg.com/"
+      # - name: Yarn
+      #   label: Yarn
+      #   icon: i-logos-yarn
+      #   link: "https://yarnpkg.com/"
       - name: NPM
         label: NPM
         icon: i-logos-npm-icon
         link: "https://www.npmjs.com/"
+      - name: Pnpm
+        label: Pnpm
+        icon: i-logos-pnpm
+        link: "https://pnpm.io/"
       - name: EsLint
         label: EsLint
         icon: i-logos-eslint
@@ -183,14 +187,10 @@ toolsData:
         label: Visual Studio Code
         icon: i-logos-visual-studio-code
         link: "https://code.visualstudio.com/"
-      - name: VS Studio
+      - name: Visual Studio
         label: Visual Studio
         icon: i-logos-visual-studio
         link: "https://visualstudio.microsoft.com/"
-      - name: JetBrains
-        label: JetBrains
-        icon: i-logos-jetbrains
-        link: "https://www.jetbrains.com/"
       - name: intelliJ
         label: intelliJ
         icon: i-logos-intellij-idea
@@ -203,6 +203,10 @@ toolsData:
         label: Figma
         icon: i-logos-figma
         link: "https://www.figma.com/"
+      - name: Adobe XD
+        label: Adobe XD
+        icon: i-logos-adobe-xd
+        link: "https://www.adobe.com/products/xd.html"
       - name: Edge
         label: Microsoft Edge
         icon: i-logos-microsoft-edge
