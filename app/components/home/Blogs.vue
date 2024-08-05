@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const feed = 'https://dev.to/feed/teshanecrawford'
+const feed = 'https://dev.to/teshanecrawford'
 </script>
 
 <template>
@@ -55,11 +55,8 @@ const feed = 'https://dev.to/feed/teshanecrawford'
             <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
               Get my blog updates via <NuxtLink
                 class="font-bold"
-                :to="`https://feedly.com/i/subscription/feed%2F${encodeURIComponent(feed)}`"
-              >Feedly</NuxtLink>, <NuxtLink
-                class="font-bold"
-                :to="`https://www.inoreader.com/feed/${encodeURIComponent(feed)}`"
-              >Inoreader</NuxtLink> or <NuxtLink
+                :to="`https://dev.to/teshanecrawford${encodeURIComponent(feed)}`"
+              >DEV</NuxtLink>, or <NuxtLink
                 class="font-bold"
                 to="/"
               >RSS</NuxtLink>.
