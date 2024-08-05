@@ -108,7 +108,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://teshanecrawford.com',
+    url: 'https://teshanecrawford.live',
     name: 'Teshane Crawford',
     description: 'This is my personal website where I share my thoughts and projects.',
     defaultLocale: 'en',
