@@ -22,12 +22,14 @@
       I am a <code
         text-p-r
         font-dank
+        font-semibold
         v-text="`<Software Engineer />`"
       />  &
       <code
         text-sm
         rd-sm
         font-dank
+        font-semibold
         b="~ dashed purple/60"
         p-1
         text-p-r
@@ -46,7 +48,7 @@
       and adapt to new technologies. Also if you're interested in knowing what
       technologies I am currently using, check out my <NuxtLink
         to="/tools"
-        class="text-p-r-r font-medium"
+        class="text-p-r-r font-semibold"
       >
         Tools
       </NuxtLink> page.
@@ -67,7 +69,7 @@
       collaborate with other developers. If you have a project that you would like
       me to work on, feel free to <NuxtLink
         to="/chat"
-        class="text-p-r font-medium"
+        class="text-p-r font-semibold"
       >
         contact me
       </NuxtLink>.
@@ -76,16 +78,15 @@
       <a
         class="group"
         text-p-r
-        trans
+        font-semibold
         hover-op-75
         href="mailto:crawfordteshane@gmail.com"
       >
         Hire Me
         <i
-          group-hover="ml-1"
+          group-hover="ml-1 transition-all duration-300"
           i-ri:arrow-right-up-line
           bg-gradient-to-r
-          trans
         />
       </a>
     </p>
