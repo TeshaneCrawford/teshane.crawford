@@ -2,7 +2,7 @@ export default defineAppConfig({
   teshanePortfolios: {
     site: {
       name: 'Teshane Crawford - Software Engineer',
-      description: 'Teshane Crawford - Software Engineer',
+      description: 'Teshane Crawford is a software engineer who specializes in building web applications using modern technologies.',
       domain: 'teshanecrawford.com',
       social: {
         twitter: 'https://x.com/TeshaneCrawford',
