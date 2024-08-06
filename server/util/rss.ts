@@ -9,12 +9,13 @@ export async function generateBlogFeed(event: H3Event<EventHandlerRequest>) {
   const feed = new Feed({
     title: `${SiteTagLine} | ${SiteName}`,
     description: SiteDescription,
+    feed: `${SiteUrl}/feed.xml`,
     id: SiteUrl,
     link: SiteUrl,
     language: SiteLanguage,
     image: `${SiteUrl}/logo/TV.png`,
     favicon: `${SiteUrl}/favicon.ico`,
-    copyright: `Copyright (c) 2021-present, ${SiteName}`,
+    copyright: `Copyright (c) 2021-${new Date().getFullYear()}, ${SiteName}. All rights reserved.`,
     feedLinks: {
       json: `${SiteUrl}/feed.json`,
       atom: `${SiteUrl}/feed.atom`,
