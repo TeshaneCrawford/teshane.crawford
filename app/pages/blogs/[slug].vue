@@ -78,16 +78,20 @@ defineOgImageComponent(
       <NuxtLink
         v-if="previousArticle"
         :to="`${previousArticle._path}`"
-        class="text-black/60 dark:text-white/70 hover:underline"
+        class="text-black/60 dark:text-white/70 transition-all transition-duration-500 hover:bg-indigo/10 border hover:border border-dashed border-indigo rounded-lg rd-sm p-1 w-max"
       >
-        ← {{ previousArticle.title }}
+        <span class="transition-duration-500">
+          ← {{ previousArticle.title }}
+        </span>
       </NuxtLink>
       <NuxtLink
         v-if="nextArticle"
         :to="`${nextArticle._path}`"
-        class="text-black/60 dark:text-white/70 hover:underline"
+        class="text-black/60 dark:text-white/70 transition-all transition-duration-500 hover:bg-indigo/10 border hover:border border-dashed border-indigo rounded-lg rd-sm p-1 w-max"
       >
-        {{ nextArticle.title }} →
+        <span class="transition-duration-500">
+          {{ nextArticle.title }} →
+        </span>
       </NuxtLink>
     </nav>
   </BlogMain>

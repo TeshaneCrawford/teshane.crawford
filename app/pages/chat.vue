@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Chat - Teshane Crawford',
+  title: 'Chat',
   description: 'Chat with me. I\'m available via these platforms.',
 })
 </script>

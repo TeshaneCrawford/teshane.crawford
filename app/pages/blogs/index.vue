@@ -22,12 +22,12 @@ defineOgImageComponent('BlogPost', {
 })
 
 useHead({
-  title: page.value?.title,
+  title: 'Blog',
   meta: [
     {
       hid: 'description',
       name: 'description',
-      content: page.value?.description,
+      content: 'Articles written by Teshane Crawford.',
     },
   ],
 })
