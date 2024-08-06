@@ -26,7 +26,10 @@ withDefaults(defineProps<{
           {{ description }}
         </p>
         <div class="flex w-full items-center justify-center pb-4">
-          t.c
+          <img
+            src="/logo/TC.png"
+            class="size-10"
+          >
           <p class="font-medium pl-3">
             teshanecrawford
           </p>
