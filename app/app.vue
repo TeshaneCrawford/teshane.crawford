@@ -1,25 +1,60 @@
 <script setup lang="ts">
-// const title = ref('A blog about technologies I use in web development and programming.')
-// const description = ref('I write about the technologies I use in web development and programming. I also write about my experiences as a software engineer.')
-// defineOgImageComponent(
-//   'BlogPost',
-//   {
-//     title: title,
-//     description: description,
-//   },
-// )
+const title = ref('Teshane Crawford - Software Engineer')
+const description = ref('Teshane Crawford is a software engineer based in New York City. I help companies build better applications.')
+defineOgImageComponent(
+  'MainOg',
+)
+
+const faviconHref = ref('/logo/TV.png') // Valor predeterminado
+
+onMounted(() => {
+  const updateFavicon = () => {
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      faviconHref.value = '/logo/TC.png'
+    }
+    else {
+      faviconHref.value = '/logo/TV.png'
+    }
+  }
+
+  updateFavicon()
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon)
+})
 
 useHead({
   bodyAttrs: {
     class: 'font-sans antialiased text-gray-6 dark:text-gray-2',
   },
-  title: 'Teshane Crawford - Software Engineer',
+  htmlAttrs: {
+    lang: 'en',
+  },
+  titleTemplate: c => c ? `${c} - Teshane Crawford` : 'Teshane Crawford - Software Engineer',
+  // title: 'Teshane Crawford - Software Engineer',
   meta: [
     {
       name: 'description',
       content: 'Teshane Crawford is a software engineer based in New York City.',
     },
   ],
+  link: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: faviconHref,
+    },
+  ],
+})
+
+useSeoMeta({
+  title: title,
+  description: description,
+  ogTitle: title,
+  ogDescription: description,
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterCard: 'summary_large_image',
+  ogImage: '[og:image]',
+  twitterImage: '[twitter:image]',
 })
 </script>
 
