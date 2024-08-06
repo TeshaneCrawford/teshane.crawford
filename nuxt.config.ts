@@ -115,6 +115,13 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
   },
 
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/', '/feed.xml'],
+    },
+  },
+
   ssr: true,
 
   experimental: {
