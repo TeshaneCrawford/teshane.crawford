@@ -33,20 +33,19 @@
         b="~ dashed purple/60"
         p-1
         text-p-r
-      >Open Source Enthusiast</code> with over 3 years of experience in web and mobile
-      development. I have a passion for building applications that are
-      user-friendly and accessible to everyone. I am always looking for new
-      ways to learn and to improve my skills. The Vue.js, Vite, and Nuxt communities
-      have been a great source of inspiration for me.
+      >Open Source Enthusiast</code> with over 3 years of experience crafting user-centric
+      web and mobile applications, I am committed to building accessible digital experiences for all.
+      Driven by a lifelong love of learning, I continually seek out new challenges to expand my skillset.
+      The vibrant Vue.js, Vite, and Nuxt communities have been instrumental in shaping my development
+      journey.
     </p>
     <p>
-      I have used a variety of technologies to build applications, including
-      ASP.NET Core, TypeScript, React, React Native, Node.js, Vue.js, and more.
-      I have experience working with databases such as SQL Server, PostgreSQL, and
-      MongoDB. I have also worked with cloud services such as Azure and AWS.
-      If your project requires a specific technology, I am always willing to learn
-      and adapt to new technologies. Also if you're interested in knowing what
-      technologies I am currently using, check out my <NuxtLink
+      I bring a diverse skillset to the table, having built applications with technologies
+      like ASP.NET Core, TypeScript, React, React Native, Node.js, Vue.js, and more.
+      I'm comfortable working with various databases, including SQL Server, PostgreSQL, and MongoDB.
+      For cloud solutions, I have experience with Azure and AWS. Additionally, I'm a fast learner
+      and eager to adapt to new technologies specific to your project needs.
+      To see my current focus, feel free to explore my <NuxtLink
         to="/tools"
         class="text-p-r-r font-semibold"
       >
@@ -54,20 +53,20 @@
       </NuxtLink> page.
     </p>
     <p>
-      I am a graduate of the University of Technology, Jamaica, where I received a
-      Bachelor of Science in Computing with a major in Software Engineering. I
-      am currently pursuing a certification in Azure Fundamentals.
+      I hold a Bachelor of Science in Computing with a major in Software Engineering
+      from the University of Technology, Jamaica. I am currently enhancing my skill set
+      by pursuing an Azure Fundamentals certification.
     </p>
     <p>
-      I have a wide range of interests outside of software development. I enjoy
-      reading books, repairing electronics, and learning new technologies.
-      Recently, I have been learning about machine learning and artificial
-      intelligence as well as relearning Java.
+      Beyond software development, I have diverse interests. I enjoy immersing myself with
+      knowledge through reading, engaging in hands-on problem-solving by repairing electronics,
+      and staying at the forefront of technological advancements. Currently, I'm delving into the
+      exciting worlds of machine learning and artificial intelligence, while also solidifying
+      my Java programming skills.
     </p>
     <p>
-      I am always looking for new opportunities to work on exciting projects and
-      collaborate with other developers. If you have a project that you would like
-      me to work on, feel free to <NuxtLink
+      I thrive on collaboration and am eager to contribute my skills to innovative projects.
+      Let's build something great together. Feel free to <NuxtLink
         to="/chat"
         class="text-p-r font-semibold"
       >
