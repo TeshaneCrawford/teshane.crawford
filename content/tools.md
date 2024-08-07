@@ -5,7 +5,7 @@ lastUpdate: "2024-04-20."
 toolsData:
   - title: Programming Languages
     toolData:
-      - name: C#
+      - name: C Sharp
         label: C#
         icon: i-simple-icons:csharp
         color: "#512BD4"
