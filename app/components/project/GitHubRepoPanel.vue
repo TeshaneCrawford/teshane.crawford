@@ -9,9 +9,9 @@ defineProps<{
 
 <template>
   <div v-if="data.length">
-    <h4>
+    <h3 class="font-medium text-2xl mb">
       {{ label }}
-    </h4>
+    </h3>
     <div grid="~ cols-1 md:cols-2 lg:cols-3 gap-4">
       <ProjectGitHubRepo
         v-for="repo in data"

@@ -32,7 +32,7 @@ defineProps<{
         text-sm
       >
         <i i-ri:git-repository-line />
-        <span>{{ repo.name }}</span>
+        <span class="font-medium">{{ repo.name }}</span>
         <span
           inline-block
           fw-normal
