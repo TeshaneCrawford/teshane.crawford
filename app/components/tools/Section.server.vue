@@ -1,16 +1,13 @@
 <script lang="ts" setup>
-// const route = useRoute()
-const { data: doc } = await useLazyAsyncData('tools', () => queryContent('/tools/').findOne())
+const { error, data: doc } = await useLazyAsyncData('tools', () => queryContent('/tools/').findOne())
 
-// const { error } = await useAsyncData('tools', () => queryContent('/tools/').findOne())
-
-// if (error.value) {
-//   throw createError({
-//     statusCode: 404,
-//     message: error.value.message || 'Page not found',
-//     fatal: true,
-//   })
-// }
+if (error.value) {
+  throw createError({
+    statusCode: 404,
+    message: error.value.message || 'Page not found',
+    fatal: true,
+  })
+}
 </script>
 
 <template>
