@@ -34,6 +34,7 @@ if (error.value) {
               :title="data.label"
               class="flex items-center"
             >
+              <!-- c-[#4C31A4] To be added to class if dynaic value fails to produce -->
               <icon
                 v-if="data.icon"
                 class="h-10 w-10"
