@@ -78,7 +78,7 @@ defineOgImageComponent(
       <NuxtLink
         v-if="previousArticle"
         :to="`${previousArticle._path}`"
-        class="text-black/60 dark:text-white/70 transition-all transition-duration-500 hover:bg-indigo/10 border hover:border border-dashed border-indigo rounded-lg rd-sm p-1 w-max"
+        class="text-black/60 dark:text-white/70 hover:underline hover:underline-offset-6 hover:underline-neutral"
       >
         <span class="transition-duration-500">
           ← {{ previousArticle.title }}
@@ -87,7 +87,7 @@ defineOgImageComponent(
       <NuxtLink
         v-if="nextArticle"
         :to="`${nextArticle._path}`"
-        class="text-black/60 dark:text-white/70 transition-all transition-duration-500 hover:bg-indigo/10 border hover:border border-dashed border-indigo rounded-lg rd-sm p-1 w-max"
+        class="text-black/60 dark:text-white/70 hover:underline hover:underline-offset-6 hover:underline-neutral"
       >
         <span class="transition-duration-500">
           {{ nextArticle.title }} →
