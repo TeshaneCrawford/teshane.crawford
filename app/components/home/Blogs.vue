@@ -30,7 +30,6 @@ const feed = 'https://dev.to/teshanecrawford'
         <div class="w-full mt-10 md:w-1/3 md:mt-0">
           <form
             method="get"
-            :action="feed"
             class="p-6 border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600"
           >
             <div class="relative flex items-center space-x-2">
@@ -55,10 +54,12 @@ const feed = 'https://dev.to/teshanecrawford'
             <p class="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
               Get my blog updates via <NuxtLink
                 class="font-bold"
-                :to="`https://dev.to/teshanecrawford${encodeURIComponent(feed)}`"
+                :to="`https://dev.to/teshanecrawford`"
+                target="_blank"
               >DEV</NuxtLink>, or <NuxtLink
                 class="font-bold"
-                to="/"
+                to="/feed.xml"
+                target="_blank"
               >RSS</NuxtLink>.
             </p>
             <div class="flex flex-col items-center w-full mt-4 space-y-3">
