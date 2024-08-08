@@ -12,7 +12,7 @@ const { y: scroll } = useWindowScroll()
 <template>
   <header class="header z-40">
     <NuxtLink
-      class="absolute m-5 h-12 w-12 select-none font-bold italic font-dank outline-none xl:fixed"
+      class="absolute m-5 h-12 w-12 select-none font-bold italic font-dank outline-none xl:fixed pt-4.5"
       to="/"
       focusable="false"
     >
@@ -49,7 +49,7 @@ const { y: scroll } = useWindowScroll()
         >
           <span class="lt-md:hidden">Projects</span>
           <div
-            i-fluent-document-folder-24-regular
+            i-uil-folder-open
             md:hidden
           />
         </NuxtLink>
@@ -59,7 +59,7 @@ const { y: scroll } = useWindowScroll()
         >
           <span class="lt-md:hidden">Blog</span>
           <div
-            i-fluent-news-24-regular
+            i-uil-pen
             class="md:hidden"
           />
         </NuxtLink>
@@ -72,7 +72,7 @@ const { y: scroll } = useWindowScroll()
         >
           <span class="lt-md:hidden">About</span>
           <div
-            i-fluent-document-one-page-sparkle-24-regular
+            i-uil-user
             class="md:hidden"
           />
         </NuxtLink>
@@ -81,7 +81,11 @@ const { y: scroll } = useWindowScroll()
           class="lt-md:hidden"
           title="Tools"
         >
-          Tools
+          <span class="lt-md:hidden">Tools</span>
+          <div
+            i-uil-layer-group
+            class="md:hidden"
+          />
         </NuxtLink>
         <NuxtLink
           to="/chat"
