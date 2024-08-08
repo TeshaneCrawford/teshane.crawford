@@ -11,6 +11,7 @@
       <div
         i-ri-twitter-x-line
         hover-text-gray-600
+        dark:hover-text-gray-3
         alt="Twitter logo"
       />
     </NuxtLink>
@@ -21,8 +22,9 @@
       class="group"
     >
       <div
-        i-ri-github-line
+        i-uil-github-alt
         hover-text-gray-600
+        dark:hover-text-gray-3
         alt="GitHub logo"
       />
     </NuxtLink>
@@ -33,8 +35,9 @@
       class="group"
     >
       <div
-        i-ri-linkedin-box-fill
+        i-uil-linkedin
         hover-text-gray-600
+        dark:hover-text-gray-3
         alt="Linkedin logo"
       />
     </NuxtLink>
@@ -45,8 +48,9 @@
       class="group"
     >
       <div
-        i-ri-discord-line
+        i-uil-discord
         hover-text-gray-600
+        dark:hover-text-gray-3
         alt="Discord logo"
       />
     </NuxtLink>
@@ -57,8 +61,9 @@
       class="group"
     >
       <div
-        i-ri-instagram-line
+        i-uil-instagram-alt
         hover-text-gray-600
+        dark:hover-text-gray-3
         alt="Instagram logo"
       />
     </NuxtLink>
@@ -71,6 +76,7 @@
       <div
         i-ri-threads-line
         hover-text-gray-600
+        dark:hover-text-gray-3
         alt="Threads logo"
       />
     </NuxtLink>
