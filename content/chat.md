@@ -5,7 +5,7 @@ heading: "Find me on these platforms"
 links:
   - name: "LinkendIn"
     url: "https://www.linkedin.com/in/teshanecrawford/"
-    icon: "i-ri-linkedin-box-line"
+    icon: "i-uil-linkedin-alt"
   - name: "GitHub"
     url: "https://github.com/TeshaneCrawford"
     icon: "i-ri-github-fill"
@@ -35,5 +35,5 @@ links:
     icon: "i-line-md-discord"
   - name: "Email"
     url: "mailto:crawfordteshane@gmail.com"
-    icon: "i-line-md-email"
+    icon: "i-uil-envelope"
 ---
