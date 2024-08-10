@@ -29,11 +29,11 @@ const { copy, copied, isSupported } = useClipboard()
       >
         <div
           v-if="copied"
-          class="i-ri-check-line group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300 transition ease-in"
+          class="i-uil-check group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300 transition ease-in"
         />
         <div
           v-else
-          class="i-ri-clipboard-line group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300 transition ease-in"
+          class="i-uil-clipboard group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300 transition ease-in"
         />
       </Transition>
     </button>
