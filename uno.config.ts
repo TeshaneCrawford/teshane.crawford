@@ -10,6 +10,9 @@ import {
 } from 'unocss'
 
 export default defineConfig({
+  content: {
+    filesystem: ['content/**/*.md'],
+  },
   shortcuts: [
     ['linear-text', 'text-transparent bg-clip-text bg-gradient-to-r'],
     ['text-p-r', 'linear-text from-cyan to-indigo'],
@@ -38,7 +41,12 @@ export default defineConfig({
     },
   },
   presets: [
-    presetUno(),
+    presetUno({
+      // dark: {
+      //   dark: '.dark-mode',
+      //   light: '.light-mode',
+      // },
+    }),
     presetAttributify(),
     presetIcons({
       extraProperties: {
