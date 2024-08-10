@@ -1,13 +1,40 @@
 import {
+  type RuleContext,
+  type CSSObject,
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetTypography,
+  // presetTypography,
   presetUno,
   presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import { presetUseful } from 'unocss-preset-useful'
+import { parseColor } from '@unocss/preset-mini/utils'
+
+const typographyCssExtend: Record<string, CSSObject> = {
+  'a': {
+    'display': 'inline-block',
+    'line-height': '1.5',
+    'border-bottom': '1px dashed rgba(var(--c-context), 0.5)',
+    'text-decoration': 'none',
+    'transition': 'all 0.3s ease-in-out',
+  },
+  'a:hover': {
+    'border-bottom': '1px solid rgba(var(--c-context), 1)',
+  },
+  // 'pre': {
+  //   'background': '#eee !important',
+  //   'font-family': 'sans',
+  // },
+  // '.dark pre': {
+  //   background: '#222 !important',
+  // },
+  // 'blockquote': {
+  //   'border-left': '0.1em solid rgba(168,85,247,.4)',
+  // },
+}
 
 export default defineConfig({
   content: {
@@ -18,7 +45,7 @@ export default defineConfig({
     ['text-p-r', 'linear-text from-cyan to-indigo'],
     ['text-p-r-r', 'linear-text from-teal to-indigo'],
 
-    ['icon', 'w-4.5 h-4.5 cursor-pointer select-none transition-opacity-300 ease-in-out'],
+    ['icon', 'w-4.5 h-4.5 cursor-pointer select-none transition-opacity-300 ease-in-out text'],
     ['icon-btn', 'icon color-inherit op64 hover-op100 hover-color-teal-500 dark-hover-color-inherit'],
     ['icon-link', 'icon color-inherit op64 hover:op100 hover-text-red-300 dark-hover-color-inherit'],
     ['icon-text', 'color-inherit op64 hover:op100 hover-text-purple dark-hover-color-inherit'],
@@ -30,9 +57,49 @@ export default defineConfig({
     [/^badge-lg-(.*)$/, ([, c]) => `badge-${c} px3 py0.8`],
     [/^badge-square-(.*)$/, ([, c]) => `badge-${c} w-7 h-7 text-lg font-200 flex flex-none items-center justify-center`],
   ],
+  rules: [
+    [/^slide-enter-(\d+)$/, ([_, n]) => ({
+      '--enter-stage': n,
+    })],
+    [/^o-(.*)$/, ([, body = '']: string[], { theme }: RuleContext) => {
+      const color = parseColor(body, theme)
+      if (color?.cssColor?.type === 'rgb' && color.cssColor.components) {
+        return {
+          '--c-context': `${color.cssColor.components.join(',')}`,
+        }
+      }
+      else {
+        return {
+          '--c-context': color?.color,
+        }
+      }
+    }],
+    [/^(.+)::(.+)$/, ([, n, v], { theme }) => {
+      const color = parseColor(v ?? '', theme)
+      if (color?.cssColor?.type === 'rgb' && color.cssColor.components) {
+        return {
+          [`--${n}`]: `${color.cssColor.components.join(',')}`,
+        }
+      }
+      return {
+        [`--${n}`]: v,
+      }
+    }],
+    [/^view-transition-([\w-]+)$/, ([, name]) => ({ 'view-transition-name': name })],
+  ],
   theme: {
     colors: {
       context: 'rgba(var(--c-context),%alpha)',
+      primary: {
+        text: 'rgba(var(--text),%alpha)',
+      },
+      level: {
+        0: 'var(--gc-level-0)',
+        1: 'var(--gc-level-1)',
+        2: 'var(--gc-level-2)',
+        3: 'var(--gc-level-3)',
+        4: 'var(--gc-level-4)',
+      },
     },
     fontFamily: {
       dank: 'dank',
@@ -56,22 +123,15 @@ export default defineConfig({
         'vertical-align': 'text-bottom',
       },
     }),
-    presetTypography({
-      cssExtend: {
-        a: {
-          // eslint-disable-next-line @stylistic/quote-props
-          color: 'inherit',
-          'font-weigth': '700',
-          'text-decoration': 'none',
-        },
-      },
-    }),
     presetWebFonts({
       fonts: {
         // sans: 'DM Sans:400, 500, 600, 700',
         // mono: 'DM Mono',
         // dank: 'Dank Mono, monospace',
       },
+    }),
+    presetUseful({
+      typography: { cssExtend: typographyCssExtend },
     }),
   ],
   transformers: [
