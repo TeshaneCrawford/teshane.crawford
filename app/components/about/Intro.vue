@@ -36,14 +36,77 @@
       >Open Source Enthusiast</code> with over 3 years of experience crafting user-centric
       web and mobile applications, I am committed to building accessible digital experiences for all.
       Driven by a lifelong love of learning, I continually seek out new challenges to expand my skillset.
-      The vibrant Vue.js, Vite, and Nuxt communities have been instrumental in shaping my development
+      The vibrant
+      <!-- <i
+        i-logos-vue
+        mr-1
+        h-1.1em
+        w-1.1em
+      /> -->
+      <strong>
+        <a
+          linkInProse
+          o="#64b687"
+          href="https://github.com/vuejs-translations/docs-zh-cn"
+          target="_blank"
+        >Vue</a>
+      </strong>,
+      <!-- <i
+        i-logos-vitejs
+        mr-1
+        h-1.1em
+        w-1.1em
+      /> -->
+      <strong>      <a
+        linear-text
+        shape-bottom-right
+        trans
+        class="c-context::#bd34fe"
+        from="#41d1ff"
+        to="#bd34fe"
+        href="https://github.com/vitejs/vite"
+        target="_blank"
+      >Vite</a></strong>, and
+      <!-- <i
+        i-logos-nuxt-icon
+        mr-1
+        ml-2
+      /> -->
+      <strong>
+        <a
+          linkInProse
+          o="#64d98a"
+          href="https://github.com/nuxt/framework"
+          target="_blank"
+        >Nuxt</a>
+      </strong> communities have been instrumental in shaping my development
       journey.
     </p>
     <p>
       I bring a diverse skillset to the table, having built applications with technologies
-      like ASP.NET Core, TypeScript, React, React Native, Node.js, Vue.js, and more.
-      I'm comfortable working with various databases, including SQL Server, PostgreSQL, and MongoDB.
-      For cloud solutions, I have experience with Azure and AWS. Additionally, I'm a fast learner
+      like <a
+        linkInProse
+        o="#512bd4"
+        href="https://dotnet.microsoft.com/"
+        target="_blank"
+      ><strong>ASP.NET Core</strong></a>, <strong>TypeScript</strong>, <a
+        linkInProse
+        o="#61dafb"
+        href="https://react.dev/"
+        target="_blank"
+      ><strong>React.js</strong></a>, <strong>React Native</strong>, <strong>Node.js</strong>,
+      <strong>
+        <a
+          linkInProse
+          o="#64b687"
+          href="https://github.com/vuejs-translations/docs-zh-cn"
+          target="_blank"
+        >Vue</a>
+      </strong>, and more.
+      I'm comfortable working with various databases, including <strong>SQL Server</strong>,
+      <strong>PostgreSQL</strong>, and <strong>MongoDB</strong>.
+      For cloud solutions, I have experience with <strong>Azure</strong> and <strong>AWS</strong>.
+      Additionally, I'm a fast learner
       and eager to adapt to new technologies specific to your project needs.
       To see my current focus, feel free to explore my <NuxtLink
         to="/tools"
@@ -77,15 +140,17 @@
       <a
         class="group"
         text-p-r
+        trans
         font-semibold
         hover-op-75
         href="mailto:crawfordteshane@gmail.com"
       >
         Hire Me
         <i
-          group-hover="ml-1 transition-all duration-300"
+          group-hover="ml-1"
           i-ri:arrow-right-up-line
           bg-gradient-to-r
+          trans
         />
       </a>
     </p>
