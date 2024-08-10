@@ -111,6 +111,8 @@
       To see my current focus, feel free to explore my <NuxtLink
         to="/tools"
         class="text-p-r-r font-semibold"
+        hover:linkInProse
+        o="#61dafb"
       >
         Tools
       </NuxtLink> page.
@@ -132,11 +134,16 @@
       Let's build something great together. Feel free to <NuxtLink
         to="/chat"
         class="text-p-r font-semibold"
+        hover:linkInProse
+        o="#61dafb"
       >
         contact me
       </NuxtLink>.
     </p>
-    <p>
+    <p
+      hover:linkInProse
+      o="#61dafb"
+    >
       <a
         class="group"
         text-p-r
