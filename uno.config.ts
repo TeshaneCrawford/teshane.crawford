@@ -49,7 +49,7 @@ export default defineConfig({
     ['icon-btn', 'icon color-inherit op64 hover-op100 hover-color-teal-500 dark-hover-color-inherit'],
     ['icon-link', 'icon color-inherit op64 hover:op100 hover-text-red-300 dark-hover-color-inherit'],
     ['icon-text', 'color-inherit op64 hover:op100 hover-text-purple dark-hover-color-inherit'],
-    ['linkInProse', 'trans c-context'],
+    ['linkInProse', 'trans c-context underline hover:underline hover:decoration-solid decoration-dotted underline-offset-6'],
 
     [/^badge-(.*)$/, ([, c]) => `bg-${c}4:10 text-${c}5 rounded`],
     [/^badge-xs-(.*)$/, ([, c]) => `badge-${c} text-xs px2 py0.5`],
