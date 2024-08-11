@@ -78,19 +78,35 @@ defineOgImageComponent(
       <NuxtLink
         v-if="previousArticle"
         :to="`${previousArticle._path}`"
-        class="text-black/60 dark:text-white/70 hover:underline hover:underline-offset-6 hover:underline-neutral"
+        class="text-black/60 dark:text-white/70 hover:underline hover:decoration-dotted hover:underline-offset-6 hover:underline-neutral"
       >
-        <span class="transition-duration-500">
-          ← {{ previousArticle.title }}
+        <span
+          class="group"
+          trans
+        >
+          <i
+            group-hover="-ml-2"
+            trans
+            i-uil-arrow-left
+          />
+          {{ previousArticle.title }}
         </span>
       </NuxtLink>
       <NuxtLink
         v-if="nextArticle"
         :to="`${nextArticle._path}`"
-        class="text-black/60 dark:text-white/70 hover:underline hover:underline-offset-6 hover:underline-neutral"
+        class="text-black/60 dark:text-white/70 hover:underline hover:decoration-dotted hover:underline-offset-6 hover:underline-neutral"
       >
-        <span class="transition-duration-500">
-          {{ nextArticle.title }} →
+        <span
+          class="group"
+          trans
+        >
+          {{ nextArticle.title }} <i
+            group-hover="ml-2"
+            i-uil-arrow-right
+            trans
+            aria-hidden="true"
+          />
         </span>
       </NuxtLink>
     </nav>
