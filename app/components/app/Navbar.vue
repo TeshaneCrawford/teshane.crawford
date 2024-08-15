@@ -12,7 +12,7 @@ const { y: scroll } = useWindowScroll()
 <template>
   <header class="header z-40">
     <NuxtLink
-      class="absolute m-5 h-12 w-12 select-none font-bold italic font-dank outline-none xl:fixed pt-4.5"
+      class="absolute uppercase m-5 h-12 w-12 select-none font-bold italic font-sans outline-none xl:fixed pt-4.5"
       to="/"
       focusable="false"
     >
