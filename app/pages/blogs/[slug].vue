@@ -85,7 +85,7 @@ defineOgImageComponent(
           trans
         >
           <i
-            group-hover="-ml-2"
+            class="group-hover:-translate-x-1 transform duration-300"
             trans
             i-uil-arrow-left
           />
