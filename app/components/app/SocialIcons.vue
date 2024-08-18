@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="mb flex">
+  <div class="">
     <NuxtLink
       target="_blank"
       to="https://twitter.com/_D_Shybrid"
