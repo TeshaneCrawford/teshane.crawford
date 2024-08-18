@@ -105,6 +105,7 @@ export default defineConfig({
       dank: 'dank',
       sans: 'DM Sans',
       mono: 'DM Mono',
+      handwriting: 'Dancing Script cursive',
     },
   },
   presets: [
