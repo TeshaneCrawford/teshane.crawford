@@ -17,7 +17,7 @@ useHead({
       class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
     >
       <div class="flex flex-col items-center md:flex-row">
-        <div class="relative w-full md:w-1/2">
+        <div class="relative w-full">
           <h1
             class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl text-gray-8 dark:text-white"
           >
@@ -32,7 +32,8 @@ useHead({
             I can help you out with:
           </p>
           <ul
-            class="py-2 space-y-[3px] text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
+            class="py-2 space-y-[3px] text-sm list-disc list-outside
+             text-neutral-500 dark:text-neutral-400"
           >
             <li>Vue.js Development</li>
             <li>React.js Development</li>
@@ -45,7 +46,7 @@ useHead({
             link="https://x.com/TeshaneCrawford"
           />
         </div>
-        <div
+        <!-- <div
           class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"
         >
           <div class="relative z-50 w-full">
@@ -72,7 +73,7 @@ useHead({
               class="absolute bottom-0 right-0 z-20 w-full h-full lg:h-[420px] translate-x-0 -translate-y-px border border-dashed rounded-2xl bg-gradient-to-r dark:from-neutral-950/20 dark:via-black dark:to-neutral-950/20 from-white via-neutral-50 to-white border-neutral-300 dark:border-neutral-700"
             />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <HomeSeparator text="Some of My Projects" />
