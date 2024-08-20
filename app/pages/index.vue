@@ -43,7 +43,7 @@ useHead({
           </ul>
           <AppButton
             text="Get in contact - Hire me"
-            link="https://x.com/TeshaneCrawford"
+            link="/chat"
           />
         </div>
         <!-- <div
