@@ -56,6 +56,9 @@ useSeoMeta({
   ogImage: '[og:image]',
   twitterImage: '[twitter:image]',
 })
+
+// eslint-disable-next-line import/first -- simple patch to fix the issue for now
+import { Toaster } from 'vue-sonner'
 </script>
 
 <template>
@@ -70,7 +73,7 @@ useSeoMeta({
     <AppNavbar />
     <main class="of-x-hidden px-7 py-10 min-h-dvh">
       <NuxtPage />
-      <!-- <Toaster richColors /> -->
+      <Toaster rich-colors />
     </main>
     <AppFooter class="relative ml-7" />
   </div>
