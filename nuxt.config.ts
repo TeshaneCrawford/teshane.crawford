@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/color-mode',
     '@nuxt/content',
+    '@nuxthq/studio',
     '@nuxt/icon',
     '@nuxtjs/seo',
     '@nuxtjs/sitemap',
