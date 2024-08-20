@@ -9,6 +9,6 @@ My personal website, built with [Nuxtv3](https://nuxt.com/), [Vue.js 3](https://
 
 ## Activity
 
-Recent activity from my GitHub profile.
+Recent activity this repository.
 
-![Teshane's GitHub stats](https://github-readme-stats.vercel.app/api?username=teshanecrawford&count_private=true&show_icons=true&theme=light)
+![Statistic from this repository](https://repobeats.axiom.co/api/embed/72b3168583c20452cc535392ec31945f36828ba7.svg "Repobeats analytics image")
