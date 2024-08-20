@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import type { Repo } from '../../../types/project'
-const { data: repoGroup } = await useLazyFetch('/api/repos')
+const { data: repoGroup } = await useFetch('/api/repos')
 const { data: doc } = await useLazyAsyncData('projects', () => queryContent('/projects/').findOne())
 
 // onMounted(async () => {
