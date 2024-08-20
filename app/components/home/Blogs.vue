@@ -64,8 +64,8 @@ const feed = ref('https://dev.to/teshanecrawford')
             </p>
             <div class="flex flex-col items-center w-full mt-4 space-y-3">
               <input
-                type="url"
                 v-model="feed"
+                type="url"
                 readonly
                 placeholder="Email address"
                 aria-label="Email address"

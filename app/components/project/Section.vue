@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // import type { Repo } from '../../../types/project'
-const { status, data: repoGroup } = await useLazyFetch('/api/repos')
+const { data: repoGroup } = await useLazyFetch('/api/repos')
 const { data: doc } = await useLazyAsyncData('projects', () => queryContent('/projects/').findOne())
 
 // onMounted(async () => {
@@ -40,12 +40,6 @@ const { data: doc } = await useLazyAsyncData('projects', () => queryContent('/pr
     :title="doc?.title"
     :description="doc?.description"
   >
-    <!-- <ProjectGitHubRepoPanel
-      v-if="status === 'pending' || status === 'idle'"
-      :label="''"
-      :data="[]"
-      class="animate-pulse"
-    /> -->
     <ProjectGitHubRepoPanel
       v-for="(repos, key) in repoGroup"
       :key="(key as string).toString()"
