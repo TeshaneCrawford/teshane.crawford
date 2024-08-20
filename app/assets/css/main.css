@@ -231,3 +231,34 @@ html.dark {
     margin-bottom: 0.8888889em;
     line-height: 1.1111111;
   }
+
+/* Custom component styles */
+.ui-link {
+  --at-apply: underline font-semibold;
+  --at-apply: text-accent-700 decoration-accent-700/25 underline;
+  --at-apply: 'transition hover:text-accent-700/80';
+}
+
+.ui-button {
+  --at-apply: inline-flex items-center justify-center whitespace-pre;
+  --at-apply: font-semibold;
+  --at-apply: 'px-6 md:px-8 h-14 rounded-full disabled:opacity-25';
+  --at-apply: transition;
+
+  /** only primary */
+  --at-apply:  'dark:text-white text-gray-800';
+  --at-apply: border border-gray-300/50;
+  --at-apply: 'hover:bg-gray-50/90 dark:hover:bg-black/10';
+}
+
+.ui-input {
+  --at-apply: h-12 appearance-none block w-full px-4 bg-frost-200 border border-gray-300/50 rounded-xl;
+}
+
+textarea.ui-input {
+  --at-apply: h-auto py-3;
+}
+
+.h3Font {
+  --at-apply:  text-2xl font-semibold tracking-tight;
+}

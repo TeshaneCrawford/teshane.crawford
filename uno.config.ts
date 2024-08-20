@@ -36,6 +36,9 @@ const typographyCssExtend: Record<string, CSSObject> = {
   // },
 }
 
+const borderColorDefault = 'rgb(31 41 55 / 0.1)' // border-gray-800/10
+const accentColor700 = 'rgb(42, 90, 203)' // custom accent color
+
 export default defineConfig({
   content: {
     filesystem: ['content/**/*.md'],
@@ -92,6 +95,16 @@ export default defineConfig({
       context: 'rgba(var(--c-context),%alpha)',
       primary: {
         text: 'rgba(var(--text),%alpha)',
+      },
+      accent: {
+        700: accentColor700,
+      },
+      optSecondary: {
+        DEFAULT: 'rgb(212, 178, 255)',
+      },
+      frost: {
+        DEFAULT: `rgb(255 255 255 / 0.25)`, // white/25
+        200: `rgb(255 255 255 / 0.75)`, // white/75
       },
       level: {
         0: 'var(--gc-level-0)',
