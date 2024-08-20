@@ -22,6 +22,7 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxtjs/sitemap',
     '@nuxthub/core',
+    '@nuxt/image',
   ],
 
   // https://unocss.com/docs/nuxt
