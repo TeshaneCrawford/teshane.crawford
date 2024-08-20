@@ -127,12 +127,12 @@ export default defineNuxtConfig({
     },
   },
 
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ['/', '/feed.xml'],
-    },
-  },
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //     routes: ['/', '/feed.xml'],
+  //   },
+  // },
 
   ssr: true,
 
