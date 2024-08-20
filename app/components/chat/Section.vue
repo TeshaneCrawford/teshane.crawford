@@ -7,7 +7,9 @@ const { data: doc } = await useLazyAsyncData('chat', () => queryContent('/chat/'
     :title="doc?.title"
     :description="doc?.description"
   >
-    <h2 class="text-4xl font-medium">
+    <ChatContactForm />
+    <HomeSeparator text="Social Platforms" />
+    <h2 class="text-2xl font-semibold">
       {{ doc && doc.heading }}
     </h2>
     <div class="space-y-5">
