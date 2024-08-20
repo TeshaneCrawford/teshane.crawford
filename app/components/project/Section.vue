@@ -40,15 +40,14 @@ const { data: doc } = await useLazyAsyncData('projects', () => queryContent('/pr
     :title="doc?.title"
     :description="doc?.description"
   >
-    <ProjectGitHubRepoPanel
+    <!-- <ProjectGitHubRepoPanel
       v-if="status === 'pending' || status === 'idle'"
       :label="''"
       :data="[]"
       class="animate-pulse"
-    />
+    /> -->
     <ProjectGitHubRepoPanel
       v-for="(repos, key) in repoGroup"
-      v-else
       :key="(key as string).toString()"
       :label="(key as string).toString()"
       :data="repos"
