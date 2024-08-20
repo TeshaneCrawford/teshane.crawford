@@ -40,7 +40,7 @@
     "@nuxthq/studio": "^2.0.3",
     "@nuxtjs/color-mode": "^3.4.2",
     "@unocss/eslint-config": "^0.61.5",
-    "@unocss/nuxt": "^0.61.5",
+    "@unocss/nuxt": "^0.61.9",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
     "cheerio": "1.0.0-rc.12",
