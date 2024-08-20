@@ -40,13 +40,12 @@ const { data: doc } = await useLazyAsyncData('projects', () => queryContent('/pr
     :title="doc?.title"
     :description="doc?.description"
   >
-  wow
-    <!-- <ProjectGitHubRepoPanel
+    <ProjectGitHubRepoPanel
       v-for="(repos, key) in repoGroup"
       :key="key.toString()"
       :label="key.toString()"
       :data="repos"
-    /> -->
+    />
   </AppPageHeading>
 </template>
 
