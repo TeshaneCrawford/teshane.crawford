@@ -18,7 +18,7 @@
     >
       「 Whatever is worth doing, do it well. 」
     </p>
-    <p class="first-letter">
+    <p class="letter">
       I am a <code
         text-p-r
         font-dank
@@ -170,7 +170,7 @@ p {
   margin: 15px 0;
 }
 
-.first-letter::first-letter {
+.letter::first-letter {
   -webkit-initial-letter: 2;
   initial-letter: 2;
   margin: 0 1em 0 0;

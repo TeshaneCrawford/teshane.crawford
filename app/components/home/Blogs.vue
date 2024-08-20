@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const feed = 'https://dev.to/teshanecrawford'
+// const feed = 'https://dev.to/teshanecrawford'
 </script>
 
 <template>
@@ -64,7 +64,6 @@ const feed = 'https://dev.to/teshanecrawford'
             </p>
             <div class="flex flex-col items-center w-full mt-4 space-y-3">
               <input
-                v-model="feed"
                 type="url"
                 readonly
                 placeholder="Email address"

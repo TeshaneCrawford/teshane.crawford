@@ -85,6 +85,6 @@
 
 <style scoped>
 a {
-  @apply hover: text-gray-400 dark:hover:text-gray-300 p-2;
+  --at-apply: 'hover: text-gray-400 dark:hover:text-gray-300 p-2';
 }
 </style>
