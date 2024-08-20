@@ -134,6 +134,10 @@ export default defineNuxtConfig({
 
   ssr: true,
 
+  build: {
+    transpile: ['vue-sonner'],
+  },
+
   experimental: {
     componentIslands: true,
     payloadExtraction: true,
