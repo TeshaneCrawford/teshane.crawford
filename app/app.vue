@@ -70,6 +70,7 @@ useSeoMeta({
     <AppNavbar />
     <main class="of-x-hidden px-7 py-10 min-h-dvh">
       <NuxtPage />
+      <Toaster richColors />
     </main>
     <AppFooter class="relative ml-7" />
   </div>
