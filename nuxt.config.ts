@@ -119,6 +119,12 @@ export default defineNuxtConfig({
     defaultLocale: 'en',
   },
 
+  runtimeConfig: {
+    private: {
+      resendApiKey: process.env.NUXT_PRIVATE_RESEND_API_KEY,
+    },
+  },
+
   nitro: {
     prerender: {
       crawlLinks: true,
