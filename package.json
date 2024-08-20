@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "nuxt typecheck"
+    "typecheck": "nuxt typecheck",
+    "release": "release-it"
   },
   "dependencies": {
     "@nuxt/content": "npm:@nuxt/content-edge@latest",
