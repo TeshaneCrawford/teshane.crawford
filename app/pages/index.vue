@@ -32,7 +32,7 @@ useHead({
             I can help you out with:
           </p>
           <ul
-            class="py-2 space-y-[3px] text-sm list-disc list-outside
+            class="py-2 space-y-[3px] text-sm list-disc list-inside
              text-neutral-500 dark:text-neutral-400"
           >
             <li>Vue.js Development</li>
