@@ -130,19 +130,19 @@ export default defineNuxtConfig({
   // nitro: {
   //   prerender: {
   //     crawlLinks: true,
-  //     routes: ['/', '/feed.xml'],
+  //     routes: ['/feed.xml'],
   //   },
   // },
 
-  ssr: true,
+  // ssr: true,
 
   build: {
     transpile: ['vue-sonner'],
   },
 
   experimental: {
-    componentIslands: true,
-    payloadExtraction: true,
+    // componentIslands: true,
+    // payloadExtraction: true,
     viewTransition: true,
   },
 })
