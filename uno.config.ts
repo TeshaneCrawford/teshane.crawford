@@ -48,7 +48,7 @@ export default defineConfig({
     ['text-p-r', 'linear-text from-cyan to-indigo'],
     ['text-p-r-r', 'linear-text from-teal to-indigo'],
 
-    ['icon', 'w-4.5 h-4.5 cursor-pointer select-none transition-opacity-300 ease-in-out text'],
+    ['icon', 'w-4.5 h-4.5 cursor-pointer select-none transition-opacity-300 ease-in-out'],
     ['icon-btn', 'icon color-inherit op64 hover-op100 hover-color-teal-500 dark-hover-color-inherit'],
     ['icon-link', 'icon color-inherit op64 hover:op100 hover-text-red-300 dark-hover-color-inherit'],
     ['icon-text', 'color-inherit op64 hover:op100 hover-text-purple dark-hover-color-inherit'],
