@@ -36,7 +36,7 @@ const typographyCssExtend: Record<string, CSSObject> = {
   // },
 }
 
-const borderColorDefault = 'rgb(31 41 55 / 0.1)' // border-gray-800/10
+// const borderColorDefault = 'rgb(31 41 55 / 0.1)' // border-gray-800/10
 const accentColor700 = 'rgb(42, 90, 203)' // custom accent color
 
 export default defineConfig({
