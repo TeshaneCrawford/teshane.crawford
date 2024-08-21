@@ -25,6 +25,11 @@ export default defineNuxtConfig({
     '@nuxt/image',
   ],
 
+  // https://hub.nuxt.com/docs/getting-started/installation#options
+  hub: {
+    cache: true,
+  },
+
   // https://unocss.com/docs/nuxt
   css: [
     '@unocss/reset/tailwind.css',
@@ -126,6 +131,9 @@ export default defineNuxtConfig({
     private: {
       resendApiKey: process.env.NUXT_PRIVATE_RESEND_API_KEY,
     },
+    public: {
+      githubRepository: process.env.NUXT_GITHUB_REPOSITORY,
+    },
   },
 
   // nitro: {
@@ -135,7 +143,7 @@ export default defineNuxtConfig({
   //   },
   // },
 
-  // ssr: true,
+  ssr: true,
 
   build: {
     transpile: ['vue-sonner'],
