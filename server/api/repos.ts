@@ -1,6 +1,6 @@
 import type { Repo } from '~~/types/project'
 
-export default defineCachedEventHandler(async () => {
+export default defineEventHandler(async () => {
   const data = await $fetch<Repo[]>('https://api.github.com/users/TeshaneCrawford/repos?per_page=100&type=owner&sort=updated')
 
   const publicRepos = data.filter(repo => !repo.private && !repo.archived)
