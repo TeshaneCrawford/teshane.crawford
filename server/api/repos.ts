@@ -1,12 +1,9 @@
-import fetchRepositories from '../util/github'
 import type { Repo } from '~~/types/project'
 
-export default defineCachedEventHandler(async (event) => {
-  const [owner, name] = process.env.NUXT_GITHUB_REPOSITORY!.split('/')
+export default defineCachedEventHandler(async () => {
+  const data = await $fetch<Repo[]>('https://api.github.com/users/TeshaneCrawford/repos?per_page=100&type=owner&sort=updated')
 
-  const repo = await fetchRepositories(event, owner!, name!)
-
-  const publicRepos = repo.filter(repo => !repo.private && !repo.archived)
+  const publicRepos = data.filter(repo => !repo.private && !repo.archived)
   const publicAndNotForkRepos = publicRepos.filter(repo => !repo.fork)
 
   const repoGroups: Record<string, Repo[]> = {
@@ -29,7 +26,7 @@ export default defineCachedEventHandler(async (event) => {
   return repoGroups
 }, {
   maxAge: 60 * 10,
-  // swr: true,
+  swr: true,
   group: 'api',
   name: 'getRepos',
   getKey: () => 'repos',
