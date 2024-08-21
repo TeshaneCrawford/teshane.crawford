@@ -143,7 +143,7 @@ export default defineNuxtConfig({
   //   },
   // },
 
-  // ssr: true,
+  ssr: true,
 
   build: {
     transpile: ['vue-sonner'],
