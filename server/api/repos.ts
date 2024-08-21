@@ -24,12 +24,6 @@ export default defineCachedEventHandler(async () => {
   }
 
   return repoGroups
-}, {
-  maxAge: 60 * 10,
-  swr: true,
-  group: 'api',
-  name: 'getRepos',
-  getKey: () => 'repos',
 })
 
 function filterRepos(repos: Repo[], key: string) {
