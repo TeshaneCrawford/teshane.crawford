@@ -9,7 +9,7 @@ defineProps<{
 
 <template>
   <div v-if="data.length">
-    <h3 class="font-medium text-2xl mb">
+    <h3 class="mb text-2xl font-medium">
       {{ label }}
     </h3>
     <div grid="~ cols-1 md:cols-2 lg:cols-3 gap-4">

@@ -26,9 +26,9 @@ export default defineNuxtConfig({
   ],
 
   // https://hub.nuxt.com/docs/getting-started/installation#options
-  hub: {
-    cache: true,
-  },
+  // hub: {
+  //   cache: true,
+  // },
 
   // https://unocss.com/docs/nuxt
   css: [
