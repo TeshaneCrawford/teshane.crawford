@@ -1,7 +1,45 @@
+import { Octokit } from 'octokit'
+import type { H3Event } from 'h3'
 import type { Repo } from '~~/types/project'
 
-export default defineEventHandler(async () => {
-  const data = await $fetch<Repo[]>('https://api.github.com/users/TeshaneCrawford/repos?per_page=100&type=owner&sort=updated')
+// Initialize Octokit instance
+let _octokit: Octokit
+
+export function useOctokit() {
+  if (!_octokit) {
+    _octokit = new Octokit({
+      auth: process.env.NUXT_GITHUB_TOKEN,
+    })
+  }
+  return _octokit
+}
+
+// Define the cached function for fetching repository details
+export const fetchRepo = defineCachedFunction(async (_event: H3Event, owner: string, repo: string) => {
+  const result = await useOctokit().request('GET /repos/{owner}/{repo}', {
+    owner,
+    repo,
+  })
+  return {
+    stars: result.data.stargazers_count,
+    forks: result.data.forks_count,
+    html_url: result.data.html_url,
+    created_at: result.data.created_at,
+    homepage: result.data.homepage,
+  }
+}, {
+  maxAge: 60 * 60,
+  name: 'githubRepoInfo',
+  getKey: (_event: H3Event, owner: string, repo: string) => `${owner}/${repo}`,
+})
+
+export default defineCachedEventHandler(async () => {
+  const octokit = useOctokit()
+  const { data } = await octokit.request('GET /user/repos', {
+    per_page: 100,
+    type: 'owner',
+    sort: 'updated',
+  })
 
   const publicRepos = data.filter(repo => !repo.private && !repo.archived)
   const publicAndNotForkRepos = publicRepos.filter(repo => !repo.fork)
