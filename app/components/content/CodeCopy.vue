@@ -10,7 +10,7 @@ const { copy, copied, isSupported } = useClipboard()
   <ClientOnly>
     <button
       v-if="isSupported"
-      class="group/copy opacity-0 group-hover:opacity-100 absolute right-2 bottom-2 p-1 backdrop-blur bg-white/90 dark:bg-gray-800/90 rounded-sm transition w-8 h-8 flex justify-center items-center"
+      class="group/copy absolute bottom-2 right-2 h-8 w-8 flex items-center justify-center rounded-sm bg-white/90 p-1 opacity-0 backdrop-blur transition dark:bg-gray-800/90 group-hover:opacity-100"
       @click="copy(code)"
     >
       <span
@@ -29,11 +29,11 @@ const { copy, copied, isSupported } = useClipboard()
       >
         <div
           v-if="copied"
-          class="i-uil-check group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300 transition ease-in"
+          class="i-uil-check transition ease-in group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300"
         />
         <div
           v-else
-          class="i-uil-clipboard group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300 transition ease-in"
+          class="i-uil-clipboard transition ease-in group-hover/copy:text-gray-400 dark:group-hover/copy:text-gray-300"
         />
       </Transition>
     </button>

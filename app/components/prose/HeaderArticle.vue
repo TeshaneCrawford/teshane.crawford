@@ -17,13 +17,13 @@ defineProps<{
     :class="{ 'pt-10': date }"
   >
     <div class="flex flex-col gap-1">
-      <h1 class="text-2xl md:text-3xl text-gray-950 dark:text-gray-50 font-bold tracking-wide">
+      <h1 class="text-2xl text-gray-950 font-bold tracking-wide md:text-3xl dark:text-gray-50">
         {{ title }}
       </h1>
     </div>
 
     <template v-if="date || categories">
-      <div class="absolute top-0 left-0 text-sm text-gray-500 dark:text-gray-400 font-light">
+      <div class="absolute left-0 top-0 text-sm text-gray-500 font-light dark:text-gray-400">
         <dl class="flex gap-1">
           <template v-if="date">
             <dt class="sr-only">
@@ -77,10 +77,10 @@ defineProps<{
                   :alt="`Profile picture of ${author.name}`"
                   width="36"
                   height="36"
-                  class="w-9 h-9 rounded-full"
+                  class="h-9 w-9 rounded-full"
                 >
                 <div class="text-sm">
-                  <div class="text-gray-950 dark:text-gray-50 leading-none font-light">
+                  <div class="text-gray-950 font-light leading-none dark:text-gray-50">
                     {{ author.name }}
                   </div>
                   <div class="mt-1">
@@ -88,7 +88,7 @@ defineProps<{
                       rel="author noopener"
                       :to="`https://x.com/${author.twitter}`"
                       target="_blank"
-                      class="text-gray-500 hover:text-gray-950 dark:text-gray-400 hover:dark:text-gray-50 leading-none transition ease-in"
+                      class="text-gray-500 leading-none transition ease-in dark:text-gray-400 hover:text-gray-950 hover:dark:text-gray-50"
                     >
                       @{{ author.twitter }}
                     </NuxtLink>

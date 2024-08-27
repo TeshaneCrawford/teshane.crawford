@@ -30,18 +30,18 @@ const icon = iconMap.get(props.filename?.toLowerCase()) || iconMap.get(props.lan
 
 <template>
   <div
-    class="mt-2 bg-gray-50 dark:bg-gray-900 rounded-md border border-gray-300/40 dark:border-gray-700/40"
+    class="mt-2 border border-gray-300/40 rounded-md bg-gray-50 dark:border-gray-700/40 dark:bg-gray-900"
   >
     <div
       v-if="!inGroup && filename"
-      class="overflow-hidden group relative pt-1 font-mono"
+      class="group relative overflow-hidden pt-1 font-mono"
     >
       <Icon
         v-if="icon"
         :name="icon"
-        class="absolute top-3 left-3"
+        class="absolute left-3 top-3"
       />
-      <span class="absolute top-2 left-10">
+      <span class="absolute left-10 top-2">
         {{ filename }}
       </span>
       <span class="ml-auto mr-1">

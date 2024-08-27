@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="prose prose-zinc dark:prose-invert max-w-none">
+  <div class="max-w-none prose prose-zinc dark:prose-invert">
     <slot />
   </div>
 </template>

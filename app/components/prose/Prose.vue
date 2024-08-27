@@ -10,11 +10,11 @@ provide('toc', props.toc)
 </script>
 
 <template>
-  <article class="grid grid-cols-1 md:grid-cols-[70%_1fr] xl:grid-cols-[75%_1fr] gap-y-12 md:gap-y-0 md:gap-x-8 items-start">
+  <article class="grid grid-cols-1 items-start gap-y-12 md:grid-cols-[70%_1fr] xl:grid-cols-[75%_1fr] md:gap-x-8 md:gap-y-0">
     <div class="row-start-1">
       <slot name="header">
         <header v-if="title">
-          <h1 class="text-gray-950 dark:text-gray-50 text-2xl md:text-3xl font-bold tracking-wide">
+          <h1 class="text-2xl text-gray-950 font-bold tracking-wide md:text-3xl dark:text-gray-50">
             {{ title }}
           </h1>
         </header>
@@ -28,7 +28,7 @@ provide('toc', props.toc)
       <slot />
     </ProseContent>
 
-    <ProseNav class="col-start-1 row-start-2 md:col-start-2 md:row-start-1 md:row-span-2 md:sticky top-4 md:overflow-y-auto md:max-h-[calc(100vh-1rem)] gray-scrollbar">
+    <ProseNav class="gray-scrollbar top-4 col-start-1 row-start-2 md:sticky md:row-span-2 md:col-start-2 md:row-start-1 md:max-h-[calc(100vh-1rem)] md:overflow-y-auto">
       <ProseNavigationToc v-if="toc" />
 
       <slot name="nav" />

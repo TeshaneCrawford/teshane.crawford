@@ -74,18 +74,18 @@ defineOgImageComponent(
         <ProseNavigationCommunity :filename="page._file" />
       </template>
     </Prose>
-    <nav class="grid grid-cols-2 gap-x-12 mt-8">
+    <nav class="grid grid-cols-2 mt-8 gap-x-12">
       <NuxtLink
         v-if="previousArticle"
         :to="`${previousArticle._path}`"
-        class="text-black/60 dark:text-white/70 hover:underline hover:decoration-dotted hover:underline-offset-6 hover:underline-neutral"
+        class="text-black/60 dark:text-white/70 hover:underline hover:underline-neutral hover:underline-offset-6 hover:decoration-dotted"
       >
         <span
           class="group"
           trans
         >
           <i
-            class="group-hover:-translate-x-1 transform duration-300"
+            class="transform duration-300 group-hover:-translate-x-1"
             trans
             i-uil-arrow-left
           />
@@ -95,7 +95,7 @@ defineOgImageComponent(
       <NuxtLink
         v-if="nextArticle"
         :to="`${nextArticle._path}`"
-        class="text-black/60 dark:text-white/70 hover:underline hover:decoration-dotted hover:underline-offset-6 hover:underline-neutral"
+        class="text-black/60 dark:text-white/70 hover:underline hover:underline-neutral hover:underline-offset-6 hover:decoration-dotted"
       >
         <span
           class="group"

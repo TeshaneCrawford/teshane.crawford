@@ -11,7 +11,7 @@ const id = useProseNavGroupId()
 
 <template>
   <div class="text-sm">
-    <div class="text-gray-950 dark:text-gray-50 font-semibold">
+    <div class="text-gray-950 font-semibold dark:text-gray-50">
       <div class="hidden md:block">
         <slot name="title" />
       </div>
@@ -25,19 +25,19 @@ const id = useProseNavGroupId()
         @click="open = !open"
       >
         <span
-          class="w-4 h-4"
+          class="h-4 w-4"
           :class="icon"
         />
         <slot name="title" />
         <span
-          class="i-ri-arrow-right-s-line w-4 h-4 transition ease-in"
+          class="i-ri-arrow-right-s-line h-4 w-4 transition ease-in"
           :class="{ 'transform rotate-90': open }"
         />
       </button>
     </div>
     <div
       :id="id"
-      class="mt-2 text-gray-500 dark:text-gray-400 md:block"
+      class="mt-2 text-gray-500 md:block dark:text-gray-400"
       :class="{ hidden: !open && !noDisclosure }"
     >
       <slot name="links" />

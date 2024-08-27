@@ -2,37 +2,41 @@
 
 <template>
   <div>
-    <h1 class="font-bold text-6xl mb-6">
+    <h1 class="mb-6 text-6xl font-bold">
       Teshane Crawford
       <!-- <span class="font-medium text-sm flex flex-wrap inline-flex items-center">
         Software Engineer <span class="mx-2">•</span> 🇯🇲 living in 🇺🇸 🗽 New York, USA
       </span> -->
-      <span class="font-medium text-sm flex flex-wrap inline-flex items-center">
+      <span class="flex inline-flex flex-wrap items-center text-sm font-medium">
         Software Engineer <span class="mx-2">•</span> 🇯🇲 living in Portland, JA
       </span>
     </h1>
     <p
-      italic
-      font-dank
+
       mt-2
+      font-dank
+      italic
     >
       「 Whatever is worth doing, do it well. 」
     </p>
     <p class="letter">
       I am a <code
+
         text-p-r
-        font-dank
         font-semibold
+        font-dank
         v-text="`<Software Engineer />`"
       />  &
       <code
-        text-sm
-        rd-sm
-        font-dank
-        font-semibold
+
         b="~ dashed purple/60"
-        p-1
+
+        rd-sm
         text-p-r
+        p-1
+        text-sm
+        font-semibold
+        font-dank
       >Open Source Enthusiast</code> with over 3 years of experience crafting user-centric
       web and mobile applications, I am committed to building accessible digital experiences for all.
       Driven by a lifelong love of learning, I continually seek out new challenges to expand my skillset.
@@ -146,9 +150,10 @@
     >
       <a
         class="group"
+
         text-p-r
-        trans
         font-semibold
+        trans
         hover-op-75
         href="mailto:crawfordteshane@gmail.com"
       >

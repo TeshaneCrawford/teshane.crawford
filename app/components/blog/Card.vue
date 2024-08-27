@@ -13,12 +13,12 @@ defineProps<{
 <template>
   <div
     as="article"
-    class="relative border border-transparent border-dashed cursor-pointer p-7 group rounded-2xl"
+    class="group relative cursor-pointer border border-transparent rounded-2xl border-dashed p-7"
   >
-    <div class="absolute inset-0 z-20 w-full h-full duration-300 ease-out bg-white border border-dashed dark:bg-neutral-950/95 rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:-translate-x-1 group-hover:-translate-y-1" />
-    <div class="absolute inset-0 z-10 w-full h-full duration-300 ease-out border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1" />
+    <div class="absolute inset-0 z-20 h-full w-full border border-neutral-300 rounded-2xl border-dashed bg-white duration-300 ease-out dark:border-neutral-600 dark:bg-neutral-950/95 group-hover:-translate-x-1 group-hover:-translate-y-1" />
+    <div class="absolute inset-0 z-10 h-full w-full border border-neutral-300 rounded-2xl border-dashed duration-300 ease-out group-hover:translate-x-1 group-hover:translate-y-1 dark:border-neutral-600" />
     <div class="relative z-30 duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1">
-      <h2 class="flex items-center mb-3 font-medium">
+      <h2 class="mb-3 flex items-center font-medium">
         <NuxtLink :to="path">
           {{ title }}
         </NuxtLink>
@@ -69,7 +69,7 @@ defineProps<{
       <p class="text-sm text-neutral-600 dark:text-neutral-400">
         <span> {{ description }} </span>
       </p>
-      <dl class="mt-2.5 text-xs font-medium text-neutral-800 dark:text-neutral-300">
+      <dl class="mt-2.5 text-xs text-neutral-800 font-medium dark:text-neutral-300">
         <!-- <dt class="sr-only">
           Published at
         </dt> -->

@@ -27,7 +27,7 @@ if (error.value) {
           <div
             v-for="data in tool.toolData"
             :key="data.name"
-            class="relative flex flex-col gap-3 items-center justify-center bg-gray-100/15 dark:bg-gray-300/15 dark:hover:bg-white/.5 shadow dark:shadow-md p-8  border border-transparent hover:border-gray-400 dark:hover:border-neutral-600 rounded-md transition-all lg:hover:!scale-110 active:!scale-80 hover:z-10 hover:shadow-lg hover:origin-center hover:text-black dark:hover:text-white"
+            class="relative flex flex-col items-center justify-center gap-3 border border-transparent rounded-md bg-gray-100/15 p-8 shadow transition-all hover:z-10 hover:origin-center hover:border-gray-400 dark:bg-gray-300/15 hover:text-black dark:shadow-md hover:shadow-lg active:!scale-80 dark:hover:border-neutral-600 dark:hover:bg-white/.5 dark:hover:text-white lg:hover:!scale-110"
           >
             <NuxtLink
               :to="data.link"
@@ -42,7 +42,7 @@ if (error.value) {
                 :color="data.color"
               />
             </NuxtLink>
-            <p class="text-center text-[12px] font-mono font-medium select-none">
+            <p class="select-none text-center text-[12px] font-medium font-mono">
               {{ data.name }}
             </p>
           </div>

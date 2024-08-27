@@ -64,17 +64,17 @@ const skills = [
 </script>
 
 <template>
-  <section class="flex flex-col gap-y-2 ">
+  <section class="flex flex-col gap-y-2">
     <div class="inline-flex flex-wrap gap-2">
       <div
         v-for="skill in skills"
         :key="skill.icon"
-        class="gap-x-1.5 py-1.5 px-3 rounded-lg inline-flex items-center text-xs border border-gray-2 dark:border-gray-8 bg-gray-100/95 text-gray-800 dark:bg-neutral-500/20 dark:text-neutral-400 hover:bg-gray-200/80 dark:hover:bg-neutral-500/30"
+        class="inline-flex items-center gap-x-1.5 border border-gray-2 rounded-lg bg-gray-100/95 px-3 py-1.5 text-xs text-gray-800 dark:border-gray-8 dark:bg-neutral-500/20 hover:bg-gray-200/80 dark:text-neutral-400 dark:hover:bg-neutral-500/30"
       >
-        <span class="flex gap-2 justify-center">
+        <span class="flex justify-center gap-2">
           <icon
             :name="skill.icon"
-            class="w-4 h-4"
+            class="h-4 w-4"
           />
           <p class="font-medium font-dank">{{ skill.title }}</p>
         </span>

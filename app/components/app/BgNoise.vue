@@ -2,7 +2,7 @@
 
 <template>
   <svg
-    class="pointer-events-none fixed isolate z-10 opacity-90 mix-blend-soft-light h-100dvh w-full"
+    class="pointer-events-none fixed isolate z-10 h-100dvh w-full opacity-90 mix-blend-soft-light"
   >
     <filter id="pedroduarteisalegend">
       <feTurbulence
@@ -18,7 +18,7 @@
       filter="url(#pedroduarteisalegend)"
     />
   </svg>
-  <div class="fixed w-full h-24 bg-gray-1/80 dark:bg-gray-6/80 blur-[150px]" />
+  <div class="fixed h-24 w-full bg-gray-1/80 blur-[150px] dark:bg-gray-6/80" />
 </template>
 
 <style scoped></style>

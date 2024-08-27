@@ -29,7 +29,7 @@ const { data: doc } = await useLazyAsyncData('chat', () => queryContent('/chat/'
           class="flex-1 border-b border-gray-300 border-dashed transition-colors hover:border-gray-700"
         />
 
-        <div class="border border-rounded p-2  bg-white/60 dark:bg-white/10 hover:bg-gray-50 dark:hover:bg-white/5">
+        <div class="border border-rounded bg-white/60 p-2 dark:bg-white/10 hover:bg-gray-50 dark:hover:bg-white/5">
           <icon
             class="h-6 w-6 flex"
             :name="link.icon"

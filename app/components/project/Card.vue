@@ -11,13 +11,13 @@ defineProps<{
   <NuxtLink
     :to="url"
     target="_blank"
-    class="relative flex flex-col items-stretch duration-300 ease-out p-7 sm:p-3 group h-65 rounded-2xl"
+    class="group relative h-65 flex flex-col items-stretch rounded-2xl p-7 duration-300 ease-out sm:p-3"
   >
     <span
-      class="absolute inset-0 z-20 block w-full h-full duration-300 ease-out bg-transparent border border-transparent border-dashed group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:border group-hover:border-neutral-300 dark:group-hover:border-neutral-600 group-hover:border-dashed rounded-2xl group-hover:bg-white dark:group-hover:bg-neutral-950"
+      class="absolute inset-0 z-20 block h-full w-full border border-transparent rounded-2xl border-dashed bg-transparent duration-300 ease-out group-hover:border group-hover:border-neutral-300 group-hover:border-dashed group-hover:bg-white group-hover:-translate-x-1 group-hover:-translate-y-1 dark:group-hover:border-neutral-600 dark:group-hover:bg-neutral-950"
     />
     <span
-      class="absolute inset-0 z-10 block w-full h-full duration-300 ease-out border border-dashed rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:translate-x-1 group-hover:translate-y-1"
+      class="absolute inset-0 z-10 block h-full w-full border border-neutral-300 rounded-2xl border-dashed duration-300 ease-out group-hover:translate-x-1 group-hover:translate-y-1 dark:border-neutral-600"
     />
     <span
       class="relative z-30 block duration-300 ease-out group-hover:-translate-x-1 group-hover:-translate-y-1"
@@ -25,16 +25,16 @@ defineProps<{
       <span class="block w-full">
         <img
           :src="image"
-          class="w-full h-auto rounded-lg aspect-[16/9]"
+          class="aspect-[16/9] h-auto w-full rounded-lg"
         >
       </span>
-      <span class="block w-full px-1 mt-5 mb-1 sm:mt-3">
+      <span class="mb-1 mt-5 block w-full px-1 sm:mt-3">
         <span
-          class="flex items-center mb-0 text-base font-semibold tracking-tight text-neutral-900 dark:text-neutral-100"
+          class="mb-0 flex items-center text-base text-neutral-900 font-semibold tracking-tight dark:text-neutral-100"
         >
           <span>{{ name }}</span>
           <svg
-            class="group-hover:translate-x-0 group-hover:translate-y-0 -rotate-45 translate-y-1 -translate-x-1 w-2.5 h-2.5 stroke-current ml-1 transition-all ease-in-out duration-200 transform"
+            class="ml-1 h-2.5 w-2.5 translate-y-1 transform stroke-current transition-all duration-200 ease-in-out -translate-x-1 group-hover:translate-x-0 group-hover:translate-y-0 -rotate-45"
             viewBox="0 0 13 15"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -52,10 +52,10 @@ defineProps<{
             stroke="currentColor"
             stroke-width="2.4"
           ><g><polyline
-            class="transition-all duration-200 ease-out opacity-0 delay-0 group-hover:opacity-100"
+            class="opacity-0 transition-all duration-200 delay-0 ease-out group-hover:opacity-100"
             points="5.33333333 0 10.8333333 5.5 5.33333333 11"
           /><line
-            class="transition-all duration-200 ease-out transform -translate-x-1 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 group-hover:ml-0"
+            class="transform opacity-0 transition-all duration-200 ease-out group-hover:ml-0 -translate-x-1 group-hover:translate-x-0 group-hover:opacity-100"
             x1="10.8333333"
             y1="5.5"
             x2="0.833333333"

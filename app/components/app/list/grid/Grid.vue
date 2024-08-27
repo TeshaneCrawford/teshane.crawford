@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <ol class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 place-items-stretch">
+  <ol class="grid grid-cols-1 place-items-stretch gap-4 lg:grid-cols-3 md:grid-cols-2 lg:gap-8">
     <slot />
   </ol>
 </template>

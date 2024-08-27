@@ -6,6 +6,7 @@ function toggleDark(event: MouseEvent) {
     && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   if (!isAppearanceTransition) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     colorMode.value === 'light' ? (colorMode.preference = 'dark') : (colorMode.preference = 'light')
     return
   }
@@ -18,6 +19,7 @@ function toggleDark(event: MouseEvent) {
   )
   // @ts-expect-error: Transition API
   const transition = document.startViewTransition(async () => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     colorMode.value === 'light' ? (colorMode.preference = 'dark') : (colorMode.preference = 'light')
     await nextTick()
   })

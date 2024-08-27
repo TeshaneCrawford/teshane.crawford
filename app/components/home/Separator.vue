@@ -6,25 +6,25 @@ defineProps<{
 
 <template>
   <div class="relative my-32">
-    <div class="relative w-full pl-5 overflow-x-hidden md:pl-0">
+    <div class="relative w-full overflow-x-hidden pl-5 md:pl-0">
       <div
-        class="absolute w-full h-px bg-gradient-to-r from-transparent to-white md:from-white dark:from-transparent dark:to-neutral-950 md:dark:from-neutral-950 md:via-transparent md:dark:via-transparent md:to-white md:dark:to-neutral-950"
+        class="absolute h-px w-full from-transparent to-white bg-gradient-to-r dark:from-transparent md:from-white md:via-transparent dark:to-neutral-950 md:to-white md:dark:from-neutral-950 md:dark:via-transparent md:dark:to-neutral-950"
       />
       <div
-        class="w-full h-px border-t border-dashed border-neutral-300 dark:border-neutral-600"
+        class="h-px w-full border-t border-neutral-300 border-dashed dark:border-neutral-600"
       />
     </div>
     <div
-      class="absolute flex items-center justify-center w-auto h-auto px-3 py-1.5 uppercase tracking-widest space-x-1 text-[0.6rem] md:-translate-x-1/2 -translate-y-1/2 border rounded-full bg-white dark:bg-neutral-900 text-neutral-400 left-0 md:ml-0 ml-5 md:left-1/2 border-neutral-100 dark:border-neutral-800 shadow-sm"
+      class="absolute left-0 ml-5 h-auto w-auto flex items-center justify-center border border-neutral-100 rounded-full bg-white px-3 py-1.5 text-[0.6rem] text-neutral-400 tracking-widest uppercase shadow-sm md:left-1/2 md:ml-0 -translate-y-1/2 space-x-1 dark:border-neutral-800 dark:bg-neutral-900 md:-translate-x-1/2"
     >
       <p class="leading-none">
         {{ text }}
       </p>
       <div
-        class="flex items-center justify-center w-5 h-5 translate-x-1 border rounded-full border-neutral-100 dark:border-neutral-800"
+        class="h-5 w-5 flex translate-x-1 items-center justify-center border border-neutral-100 rounded-full dark:border-neutral-800"
       >
         <svg
-          class="w-3 h-3"
+          class="h-3 w-3"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"

@@ -19,11 +19,11 @@ const external = computed(() => {
 <template>
   <NuxtLink
     :to="to"
-    class="block group py-1 hover:text-gray-950 hover:dark:text-gray-50 transition ease-in"
+    class="group block py-1 transition ease-in hover:text-gray-950 hover:dark:text-gray-50"
     rel="noopener"
   >
     <div
-      class="text-xs font-medium text-gray-500 dark:text-gray-400"
+      class="text-xs text-gray-500 font-medium dark:text-gray-400"
       :class="{ 'ml-7': icon }"
     >
       <slot name="label">
@@ -48,7 +48,7 @@ const external = computed(() => {
 
       <div
         v-if="external"
-        class="i-ri-arrow-right-up-line w-3 h-3"
+        class="i-ri-arrow-right-up-line h-3 w-3"
       />
     </div>
   </NuxtLink>

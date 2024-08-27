@@ -31,7 +31,7 @@ const authors = [
           <time
             v-if="date"
             :datetime="date"
-            class="text-gray-500 dark:text-gray-400 text-sm"
+            class="text-sm text-gray-500 dark:text-gray-400"
           >
             {{ new Date(date).toLocaleDateString('en-En', {
               year: 'numeric',

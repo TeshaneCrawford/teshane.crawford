@@ -27,11 +27,11 @@ useHead({
 <template>
   <div>
     <AppNavbar />
-    <main class="font-dank relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-8 xl:px-0">
-      <h1 class="font-bold text-8xl mb-24">
+    <main class="relative z-20 mx-auto mt-16 max-w-4xl w-full px-7 font-dank lg:mt-8 md:mt-24 xl:px-0">
+      <h1 class="mb-24 text-8xl font-bold">
         Oh No!
       </h1>
-      <h2 class="font-bold text-5xl mb-2">
+      <h2 class="mb-2 text-5xl font-bold">
         Error {{ error?.statusCode }}
       </h2>
       <p class="mb font-sans">
@@ -40,11 +40,11 @@ useHead({
       <pre mb-4>{{ error?.message }}</pre>
       <NuxtLink
         to="/"
-        class="text-p-r-r font-semibold hover:underline hover:underline-offset-4 hover:underline-blue"
+        class="text-p-r-r font-semibold hover:underline hover:underline-blue hover:underline-offset-4"
       >
         Go back home
       </NuxtLink>
-      <AppFooter class="relative -ml mt-24 font-sans" />
+      <AppFooter class="relative mt-24 font-sans -ml" />
     </main>
   </div>
 </template>

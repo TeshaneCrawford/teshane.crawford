@@ -3,9 +3,9 @@ const { data: doc } = await useAsyncData('projects', () => queryContent('/projec
 </script>
 
 <template>
-  <section class="max-w-4xl mx-auto px-7 lg:px-0">
+  <section class="mx-auto max-w-4xl px-7 lg:px-0">
     <h2
-      class="text-2xl font-bold leading-10 tracking-tight text-neutral-900 dark:text-neutral-100"
+      class="text-2xl text-neutral-900 font-bold leading-10 tracking-tight dark:text-neutral-100"
     >
       My Projects
     </h2>
@@ -13,7 +13,7 @@ const { data: doc } = await useAsyncData('projects', () => queryContent('/projec
       Here are some of my recent projects. I'm always working on something new, so
       check back often!
     </p>
-    <div class="grid items-stretch w-full sm:grid-cols-2 md:grid-cols-3 gap-7 mt-7">
+    <div class="grid mt-7 w-full items-stretch gap-7 md:grid-cols-3 sm:grid-cols-2">
       <div
         v-for="project in doc?.projectsData"
         :key="project.name"
@@ -27,7 +27,7 @@ const { data: doc } = await useAsyncData('projects', () => queryContent('/projec
       </div>
     </div>
 
-    <div class="flex items-center justify-center w-full py-5">
+    <div class="w-full flex items-center justify-center py-5">
       <AppButton
         text="View All My Projects"
         link="/projects"

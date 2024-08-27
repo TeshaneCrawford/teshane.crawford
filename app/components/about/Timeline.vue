@@ -5,10 +5,10 @@
     <!-- Item -->
     <div class="group relative flex gap-x-5">
       <!-- Icon -->
-      <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-        <div class="relative z-10 size-6 flex justify-center items-center">
+      <div class="relative after:absolute after:start-3 after:bottom-2 after:top-8 after:w-px after:bg-gray-200 group-last:after:hidden after:-translate-x-[0.5px] dark:after:bg-neutral-700">
+        <div class="relative z-10 size-6 flex items-center justify-center">
           <svg
-            class="shrink-0 size-6 text-gray-800 dark:text-neutral-200"
+            class="size-6 shrink-0 text-gray-800 dark:text-neutral-200"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -35,11 +35,11 @@
           2022 - Present
         </h3>
 
-        <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
+        <p class="text-sm text-gray-800 font-semibold dark:text-neutral-200">
           Software Engineer level - II
         </p>
 
-        <p class="font-medium text-sm text-gray-800 dark:text-neutral-200">
+        <p class="text-sm text-gray-800 font-medium dark:text-neutral-200">
           Jamaica Money Market Brokers
         </p>
 
@@ -47,7 +47,7 @@
           I am a Software Engineer level - II at a company called JMMB
         </p>
 
-        <ul class="list-disc ms-6 mt-3 space-y-1.5">
+        <ul class="ms-6 mt-3 list-disc space-y-1.5">
           <li class="ps-1 text-sm text-gray-600 dark:text-neutral-400">
             Developed and implemented a POS system using C#, .NET and ASP.NET Core, resulting in a 15% increase in processing efficiency.
           </li>
@@ -66,10 +66,10 @@
     <!-- Item -->
     <div class="group relative flex gap-x-5">
       <!-- Icon -->
-      <div class="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-        <div class="relative z-10 size-6 flex justify-center items-center">
+      <div class="relative after:absolute after:start-3 after:bottom-2 after:top-8 after:w-px after:bg-gray-200 group-last:after:hidden after:-translate-x-[0.5px] dark:after:bg-neutral-700">
+        <div class="relative z-10 size-6 flex items-center justify-center">
           <svg
-            class="shrink-0 size-6 text-gray-800 dark:text-neutral-200"
+            class="size-6 shrink-0 text-gray-800 dark:text-neutral-200"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -96,11 +96,11 @@
           2021 - 2022
         </h3>
 
-        <p class="font-semibold text-sm text-gray-800 dark:text-neutral-200">
+        <p class="text-sm text-gray-800 font-semibold dark:text-neutral-200">
           Freelance Frontend Developer
         </p>
 
-        <ul class="list-disc ms-6 mt-3 space-y-1.5">
+        <ul class="ms-6 mt-3 list-disc space-y-1.5">
           <li class="ps-1 text-sm text-gray-600 dark:text-neutral-400">
             Worked with clients to design and develop custom websites, resulting in a 20% increase in client satisfaction.
           </li>

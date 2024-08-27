@@ -49,8 +49,8 @@ async function submitForm() {
       <h2 class="h3Font">
         Get in touch with me
       </h2>
-      <div class="flex gap-6 flex-col mt-8">
-        <div class="flex flex-col md:flex-row gap-6">
+      <div class="mt-8 flex flex-col gap-6">
+        <div class="flex flex-col gap-6 md:flex-row">
           <input
             id="full-name"
             v-model="fullname"
@@ -59,7 +59,7 @@ async function submitForm() {
             name="fullname"
             autocomplete="name"
             required
-            class="ui-input dark:bg-transparent dark:border"
+            class="ui-input dark:border dark:bg-transparent"
           >
           <input
             id="email"
@@ -69,7 +69,7 @@ async function submitForm() {
             name="email"
             autocomplete="email"
             placeholder="john.doe@gmail.com"
-            class="ui-input dark:bg-transparent dark:border"
+            class="ui-input dark:border dark:bg-transparent"
           >
         </div>
         <input
@@ -79,7 +79,7 @@ async function submitForm() {
           type="text"
           name="subject"
           placeholder="Subject of your message"
-          class="ui-input dark:bg-transparent dark:border"
+          class="ui-input dark:border dark:bg-transparent"
         >
         <textarea
           id="message"
@@ -89,11 +89,11 @@ async function submitForm() {
           placeholder="Lets work together!"
           required
           rows="5"
-          class="ui-input dark:bg-transparent dark:border"
+          class="ui-input dark:border dark:bg-transparent"
         />
       </div>
 
-      <div class="flex justify-between flex-wrap gap-8 mt-8 mb-4">
+      <div class="mb-4 mt-8 flex flex-wrap justify-between gap-8">
         <div class="order-2 md:order-1">
           <AppPrivacyNotice>
             By submitting this form, you agree to my
@@ -108,7 +108,7 @@ async function submitForm() {
         </div>
 
         <button
-          class="order-1 md:order-2 w-full md:w-[33%] ui-button"
+          class="ui-button order-1 w-full md:order-2 md:w-[33%]"
 
           type="submit"
         >
