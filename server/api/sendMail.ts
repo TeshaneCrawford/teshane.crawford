@@ -9,11 +9,11 @@ export default defineEventHandler(async (event: H3Event) => {
     const body = (await readBody(event)) as ContactMail
     const { email, subject, message, phone, fullname } = body
     return await resend.emails.send({
-      from: 'Teshane Crawford <crawfordteshane@gmail.com>',
-      to: ['crawfordteshane@gmail'],
+      from: 'Teshane <onboarding@teshanecrawford.com>',
+      to: ['crawfordteshane@gmail.com'],
       subject: 'New message from Teshane Crawford',
       html: `
-        <p>A new message as been sent from Teshane Crawford Contact Form</p>
+        <p>A new message as been sent from Teshane Crawford</p>
         <p>Here are the details of the message:</p>
         <ul>
           <li>Full Name: ${fullname}</li>
