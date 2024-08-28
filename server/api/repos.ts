@@ -67,3 +67,22 @@ export default defineCachedEventHandler(async () => {
 function filterRepos(repos: Repo[], key: string) {
   return repos.filter(repo => repo.topics && repo.topics.includes(key))
 }
+
+// import { fetchRepo } from '../util/github'
+
+// export default defineEventHandler(async (event) => {
+//   const owner = event.context.params?.owner
+//   const repo = event.context.params?.repo
+
+//   try {
+//     const result = await fetchRepo(event, owner!, repo!)
+//     return result
+//   }
+//   catch (error) {
+//     console.error(error)
+//     return createError({
+//       statusCode: 500,
+//       statusMessage: 'Internal Server Error',
+//     })
+//   }
+// })
