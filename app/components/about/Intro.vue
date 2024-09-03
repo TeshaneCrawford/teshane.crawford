@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1 class="mb-6 text-6xl font-bold">
+    <h1 class="mb-6 text-4xl font-bold md:text-6xl">
       Teshane Crawford
       <!-- <span class="font-medium text-sm flex flex-wrap inline-flex items-center">
         Software Engineer <span class="mx-2">•</span> 🇯🇲 living in 🇺🇸 🗽 New York, USA

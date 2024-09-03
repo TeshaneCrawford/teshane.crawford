@@ -14,12 +14,12 @@ useHead({
 <template>
   <div>
     <div
-      class="relative z-20 w-full max-w-4xl mx-auto mt-16 px-7 md:mt-24 lg:mt-32 xl:px-0"
+      class="relative z-20 mx-auto mt-16 max-w-4xl w-full px-7 lg:mt-32 md:mt-24 xl:px-0"
     >
       <div class="flex flex-col items-center md:flex-row">
         <div class="relative w-full">
           <h1
-            class="mb-5 text-4xl font-bold leading-tight md:text-4xl lg:text-6xl text-gray-8 dark:text-white"
+            class="mb-5 text-3xl text-gray-8 font-bold leading-tight lg:text-6xl md:text-4xl sm:text-4xl dark:text-white"
           >
             Teshane Crawford.
           </h1>
@@ -28,12 +28,11 @@ useHead({
               class="hidden lg:block"
             >I focus on Web & Mobile development.
           </p>
-          <p class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200">
+          <p class="mb-2 text-neutral-800 font-semibold dark:text-neutral-200">
             I can help you out with:
           </p>
           <ul
-            class="py-2 space-y-[3px] text-sm list-disc list-inside
-             text-neutral-500 dark:text-neutral-400"
+            class="list-disc list-inside py-2 text-sm text-neutral-500 space-y-[3px] dark:text-neutral-400"
           >
             <li>Vue.js Development</li>
             <li>React.js Development</li>

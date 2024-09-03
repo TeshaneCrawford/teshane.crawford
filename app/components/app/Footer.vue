@@ -6,7 +6,7 @@
       <div
         class="flex flex-col md:flex-row md:items-center"
       >
-        <h4 class="font-light">
+        <h4 class="font-normal op-70">
           Find me on:
         </h4>
         <div class="flex flex-wrap">
