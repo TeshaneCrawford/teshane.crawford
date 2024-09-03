@@ -22,7 +22,7 @@
     <p class="letter">
       I am a <code
 
-        text-p-r
+        text-p-r-r-r-r
         font-semibold
         font-dank
         v-text="`<Software Engineer />`"
@@ -32,7 +32,7 @@
         b="~ dashed purple/60"
 
         rd-sm
-        text-p-r
+        text-p-r-r-r-r
         p-1
         text-sm
         font-semibold

@@ -86,8 +86,9 @@ defineOgImageComponent(
         >
           <i
             class="transform duration-300 group-hover:-translate-x-1"
-            trans
+
             i-uil-arrow-left
+            trans
           />
           {{ previousArticle.title }}
         </span>

@@ -66,24 +66,32 @@ useHead({
             <li>.NET Development</li>
             <li>and more...</li>
           </ul>
-          <p class="mt-2 text-base text-neutral-600 dark:text-neutral-400">
+          <p class="mt text-base text-neutral-600 dark:text-neutral-400">
             Let's collaborate on innovative projects! Contact me to discuss your needs.
           </p>
-          <!-- <li class="mt-2 list-none">
+          <div class="mt-2 list-none">
             <NuxtLink
               to="mailto:crawfordteshane@gmail.com"
+              class="flex items-center"
             >
-              <icon
-                name="uil-message"
-                class="h-6 w-6"
-              />
               <span
+                class="social-home-button"
+              >
+                <icon
+                  name="uil-message"
+                  class="w-4 flex-inline"
+                />
+              </span>
+              <span
+
                 ml-4
-                text-xl
-                hover:underline
+                underline
+                underline-offset-6
+                decoration-wavy
+                op-90
               >crawfordteshane@gmail.com</span>
             </NuxtLink>
-          </li> -->
+          </div>
           <AppButton
             text="Get in contact - Hire me"
             link="/chat"
@@ -140,4 +148,8 @@ useHead({
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+  .social-home-button {
+    @apply mr-[6px] h-[36px] flex justify-center items-center bg-[#E8E8E8]/10 w-[36px] border rounded-full dark:bg-[#232425] hover:bg-gray-50 dark:hover:bg-white/5;
+  }
+</style>
