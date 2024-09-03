@@ -14,19 +14,45 @@ useHead({
 <template>
   <div>
     <div
-      class="relative z-20 mx-auto mt-16 max-w-4xl w-full px-7 lg:mt-32 md:mt-24 xl:px-0"
+      class="relative z-20 mx-auto mt-16 max-w-4xl w-full px-7 lg:mt-12 md:mt-24 xl:px-0"
     >
       <div class="flex flex-col items-center md:flex-row">
         <div class="relative w-full">
-          <h1
+          <!-- <h1
             class="mb-5 text-3xl text-gray-8 font-bold leading-tight lg:text-6xl md:text-4xl sm:text-4xl dark:text-white"
           >
             Teshane Crawford.
+          </h1> -->
+          <h1 class="mb-6 text-4xl font-bold md:text-6xl">
+            Teshane Crawford
+            <!-- <span class="font-medium text-sm flex flex-wrap inline-flex items-center">
+        Software Engineer <span class="mx-2">•</span> 🇯🇲 living in 🇺🇸 🗽 New York, USA
+      </span> -->
+            <span class="flex inline-flex flex-wrap items-center text-sm font-medium">
+              Software Engineer <span class="mx-2">•</span> 🇯🇲 living in Portland, JA
+            </span>
           </h1>
-          <p class="mb-6 text-base text-neutral-600 dark:text-neutral-400">
-            I'm a software engineer. <br
+
+          <p
+
+            mt-2
+            font-dank
+            italic
+          >
+            「 Whatever is worth doing, do it well. 」
+          </p>
+
+          <p class="mb-6 mt-6 text-base text-neutral-600 dark:text-neutral-400">
+            I'm a <code
+
+              text-p-r-r-r
+              text-xl
+              font-semibold
+              font-dank
+              v-text="`<Software Engineer />`"
+            />. <br
               class="hidden lg:block"
-            >I focus on Web & Mobile development.
+            >Building Accessible Web and Mobile Apps.
           </p>
           <p class="mb-2 text-neutral-800 font-semibold dark:text-neutral-200">
             I can help you out with:
@@ -40,10 +66,42 @@ useHead({
             <li>.NET Development</li>
             <li>and more...</li>
           </ul>
+          <p class="mt-2 text-base text-neutral-600 dark:text-neutral-400">
+            Let's collaborate on innovative projects! Contact me to discuss your needs.
+          </p>
+          <!-- <li class="mt-2 list-none">
+            <NuxtLink
+              to="mailto:crawfordteshane@gmail.com"
+            >
+              <icon
+                name="uil-message"
+                class="h-6 w-6"
+              />
+              <span
+                ml-4
+                text-xl
+                hover:underline
+              >crawfordteshane@gmail.com</span>
+            </NuxtLink>
+          </li> -->
           <AppButton
             text="Get in contact - Hire me"
             link="/chat"
           />
+          <NuxtLink
+            class="ml-4 border border-rounded bg-white/60 p-1.5 dark:bg-white/10 hover:bg-gray-50 dark:hover:bg-white/5"
+            target="_blank"
+            to="https://www.linkedin.com/in/teshanecrawford/"
+            title="Linkedin"
+          >
+            <icon
+              name="uil-linkedin-alt"
+              class="w-6"
+            /> <span
+              text-sm
+              font-semibold
+            >LinkendIn</span>
+          </NuxtLink>
         </div>
         <!-- <div
           class="relative justify-end hidden w-full mt-10 md:flex md:pl-10 md:w-1/2 md:mt-0 md:translate-y-4 xl:translate-y-0"

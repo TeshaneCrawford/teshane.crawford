@@ -47,6 +47,7 @@ export default defineConfig({
     ['linear-text', 'text-transparent bg-clip-text bg-gradient-to-r'],
     ['text-p-r', 'linear-text from-cyan to-indigo'],
     ['text-p-r-r', 'linear-text from-teal to-indigo'],
+    ['text-p-r-r-r', 'linear-text from-red-2 to-red'],
 
     ['icon', 'w-4.5 h-4.5 cursor-pointer select-none transition-opacity-300 ease-in-out'],
     ['icon-btn', 'icon color-inherit op64 hover-op100 hover-color-teal-500 dark-hover-color-inherit'],
