@@ -8,11 +8,11 @@ authors:
 categories:
   - C#
   - dotnet
-publishedAt: 2023-08-15
-modifiedAt: 2023-08-15
+publishedAt: 2023-08-15T00:00:00.000Z
+modifiedAt: 2023-08-15T00:00:00.000Z
 ---
 
-# Understanding the Difference Between Records and Structs in C#
+# Understanding the Difference Between Records and Structs in C\#
 
 In C#, both `records` and `structs` are used to create user-defined types that can contain multiple members. However, they have some key differences that make them suitable for different scenarios. Let's delve into these differences.
 
@@ -50,13 +50,13 @@ public record Point(int X, int Y);
 
 ## Comparing Structs and Records
 
-| Feature | Struct | Record |
-|---------|--------|--------|
-| Type | Value Type | Reference Type |
-| Inheritance | No | Yes |
-| Null Values | No | Yes |
-| Immutability | No | Yes |
-| Equality | Reference Equality | Value Equality |
+| Feature      | Struct             | Record         |
+| ------------ | ------------------ | -------------- |
+| Type         | Value Type         | Reference Type |
+| Inheritance  | No                 | Yes            |
+| Null Values  | No                 | Yes            |
+| Immutability | No                 | Yes            |
+| Equality     | Reference Equality | Value Equality |
 
 ## Conclusion
 
