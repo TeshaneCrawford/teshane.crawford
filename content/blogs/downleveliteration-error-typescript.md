@@ -7,8 +7,8 @@ authors:
     twitter: _d_shybrid
 categories:
   - TypeScript
-publishedAt: 2023-08-15
-modifiedAt: 2023-08-15
+publishedAt: 2023-08-15T00:00:00.000Z
+modifiedAt: 2023-08-15T00:00:00.000Z
 ---
 
 > This article was inspired by an error I encountered while working on a TypeScript project. I hope it helps you resolve the same error in your projects.
@@ -31,9 +31,8 @@ Let's look at the solutions to resolve this error:
 
 To address the error, you can make use of the '--downlevelIteration' flag during compilation. This flag enables downlevel iteration for iterating over strings using a for...of loop. Here's how you can use it:
 
-``` bash [command.bash]
+```bash [command.bash]
 tsc --downlevelIteration your-file.ts
-
 ```
 
 ### Adjusting the '--target' Compiler Option
@@ -47,7 +46,6 @@ Another way to resolve the error is by adjusting the '--target' compiler option 
     // ... other options
   }
 }
-
 ```
 
 This will allow you to use for...of loops with strings without encountering the error.
@@ -63,7 +61,6 @@ This option, 'importHelpers', is handy for dealing with common helper functions,
     // ... other options
   }
 }
-
 ```
 
 ### Using Array.from()
@@ -77,7 +74,6 @@ const charArray = Array.from(myString);
 for (const char of charArray) {
   console.log(char);
 }
-
 ```
 
 ## Conclusion
