@@ -93,7 +93,7 @@ useHead({
             </NuxtLink>
           </div>
           <AppButton
-            text="Get in contact - Hire me"
+            text="Contact - Hire me"
             link="/chat"
           />
           <NuxtLink
