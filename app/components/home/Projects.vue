@@ -3,7 +3,7 @@ const { data: doc } = await useAsyncData('projects', () => queryContent('/projec
 </script>
 
 <template>
-  <section class="mx-auto max-w-4xl px-7 lg:px-0">
+  <section class="mx-auto max-w-4xl lg:px-0 md:px-7">
     <h2
       class="text-2xl text-neutral-900 font-bold leading-10 tracking-tight dark:text-neutral-100"
     >

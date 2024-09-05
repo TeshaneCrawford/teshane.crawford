@@ -11,7 +11,7 @@ defineProps<{
   <NuxtLink
     :to="url"
     target="_blank"
-    class="group relative h-65 flex flex-col items-stretch rounded-2xl p-7 duration-300 ease-out sm:p-3"
+    class="group relative flex flex-col items-stretch rounded-2xl p-7 duration-300 ease-out md:h-65 sm:p-3"
   >
     <span
       class="absolute inset-0 z-20 block h-full w-full border border-transparent rounded-2xl border-dashed bg-transparent duration-300 ease-out group-hover:border group-hover:border-neutral-300 group-hover:border-dashed group-hover:bg-white group-hover:-translate-x-1 group-hover:-translate-y-1 dark:group-hover:border-neutral-600 dark:group-hover:bg-neutral-950"

@@ -14,7 +14,7 @@ useHead({
 <template>
   <div>
     <div
-      class="relative z-20 mx-auto mt-16 max-w-4xl w-full px-7 lg:mt-12 md:mt-24 xl:px-0"
+      class="relative z-20 mx-auto mt-16 max-w-4xl w-full lg:mt-12 md:mt-24 md:px-7 xl:px-0"
     >
       <div class="flex flex-col items-center md:flex-row">
         <div class="relative w-full">
@@ -93,7 +93,7 @@ useHead({
             </NuxtLink>
           </div>
           <AppButton
-            text="Contact - Hire me"
+            text="Get in contact - Hire me"
             link="/chat"
           />
           <NuxtLink
