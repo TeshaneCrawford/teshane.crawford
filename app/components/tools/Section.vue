@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const { error, data: doc } = await useLazyAsyncData('tools', () => queryContent('/tools/').findOne())
+const { error, data: doc } = await useAsyncData('tools', () => queryContent('/tools/').findOne())
 
 if (error.value) {
   throw createError({

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const { data: repoGroup } = await useLazyFetch('/api/repos')
-const { data: doc } = await useLazyAsyncData('projects', () => queryContent('/projects/').findOne())
+const { data: repoGroup } = await useAsyncData('repos', () => $fetch('/api/repos'))
+const { data: doc } = await useAsyncData('projects', () => queryContent('/projects/').findOne())
 </script>
 
 <template>
@@ -8,12 +8,17 @@ const { data: doc } = await useLazyAsyncData('projects', () => queryContent('/pr
     :title="doc?.title"
     :description="doc?.description"
   >
-    <ProjectGitHubRepoPanel
-      v-for="(repos, key) in repoGroup"
-      :key="key.toString()"
-      :label="key.toString()"
-      :data="repos"
-    />
+    <Suspense>
+      <ProjectGitHubRepoPanel
+        v-for="(repos, key) in repoGroup"
+        :key="key"
+        :label="key"
+        :data="repos"
+      />
+      <template #fallback>
+        <div>Loading repositories...</div>
+      </template>
+    </Suspense>
   </AppPageHeading>
 </template>
 

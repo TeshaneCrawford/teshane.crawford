@@ -1,72 +1,72 @@
-import { Octokit } from 'octokit'
-import type { H3Event } from 'h3'
-import type { Repo } from '~~/types/project'
+// import { Octokit } from 'octokit'
+// import type { H3Event } from 'h3'
+// import type { Repo } from '~~/types/project'
 
-// Initialize Octokit instance
-let _octokit: Octokit
+// // Initialize Octokit instance
+// let _octokit: Octokit
 
-export function useOctokit() {
-  if (!_octokit) {
-    _octokit = new Octokit({
-      auth: process.env.NUXT_GITHUB_TOKEN,
-    })
-  }
-  return _octokit
-}
+// export function useOctokit() {
+//   if (!_octokit) {
+//     _octokit = new Octokit({
+//       auth: process.env.NUXT_GITHUB_TOKEN,
+//     })
+//   }
+//   return _octokit
+// }
 
-// Define the cached function for fetching repository details
-export const fetchRepo = defineCachedFunction(async (_event: H3Event, owner: string, repo: string) => {
-  const result = await useOctokit().request('GET /repos/{owner}/{repo}', {
-    owner,
-    repo,
-  })
-  return {
-    stars: result.data.stargazers_count,
-    forks: result.data.forks_count,
-    html_url: result.data.html_url,
-    created_at: result.data.created_at,
-    homepage: result.data.homepage,
-  }
-}, {
-  maxAge: 60 * 60,
-  name: 'githubRepoInfo',
-  getKey: (_event: H3Event, owner: string, repo: string) => `${owner}/${repo}`,
-})
+// // Define the cached function for fetching repository details
+// export const fetchRepo = defineCachedFunction(async (_event: H3Event, owner: string, repo: string) => {
+//   const result = await useOctokit().request('GET /repos/{owner}/{repo}', {
+//     owner,
+//     repo,
+//   })
+//   return {
+//     stars: result.data.stargazers_count,
+//     forks: result.data.forks_count,
+//     html_url: result.data.html_url,
+//     created_at: result.data.created_at,
+//     homepage: result.data.homepage,
+//   }
+// }, {
+//   maxAge: 60 * 60,
+//   name: 'githubRepoInfo',
+//   getKey: (_event: H3Event, owner: string, repo: string) => `${owner}/${repo}`,
+// })
 
-export default defineCachedEventHandler(async () => {
-  const octokit = useOctokit()
-  const { data } = await octokit.request('GET /user/repos', {
-    per_page: 100,
-    type: 'owner',
-    sort: 'updated',
-  })
+// export default defineCachedEventHandler(async () => {
+//   const octokit = useOctokit()
+//   const { data } = await octokit.request('GET /user/repos', {
+//     per_page: 100,
+//     type: 'owner',
+//     sort: 'updated',
+//   })
 
-  const publicRepos = data.filter(repo => !repo.private && !repo.archived)
-  const publicAndNotForkRepos = publicRepos.filter(repo => !repo.fork)
+//   const publicRepos = data.filter(repo => !repo.private && !repo.archived)
+//   const publicAndNotForkRepos = publicRepos.filter(repo => !repo.fork)
 
-  const repoGroups: Record<string, Repo[]> = {
-    'Angular': filterRepos(publicAndNotForkRepos, 'angular'),
-    'Vue Ecosystem': filterRepos(publicAndNotForkRepos, 'vue'),
-    'React': filterRepos(publicAndNotForkRepos, 'react'),
-    'C#': filterRepos(publicAndNotForkRepos, 'csharp'),
-    'TypeScript': filterRepos(publicAndNotForkRepos, 'typescript'),
-    'JavaScript': filterRepos(publicAndNotForkRepos, 'javascript'),
-    'Python': filterRepos(publicAndNotForkRepos, 'python'),
-    'Apps': filterRepos(publicAndNotForkRepos, 'apps'),
-    'Mobile': filterRepos(publicRepos, 'mobile'),
-    'UI': filterRepos(publicRepos, 'ui'),
-    'API': filterRepos(publicAndNotForkRepos, 'api'),
-    'Library': filterRepos(publicAndNotForkRepos, 'library'),
-    'Templates': filterRepos(publicAndNotForkRepos, 'template'),
-    'All': publicAndNotForkRepos,
-  }
+//   const repoGroups: Record<string, Repo[]> = {
+//     'Angular': filterRepos(publicAndNotForkRepos, 'angular'),
+//     'Vue Ecosystem': filterRepos(publicAndNotForkRepos, 'vue'),
+//     'React': filterRepos(publicAndNotForkRepos, 'react'),
+//     'C#': filterRepos(publicAndNotForkRepos, 'csharp'),
+//     'TypeScript': filterRepos(publicAndNotForkRepos, 'typescript'),
+//     'JavaScript': filterRepos(publicAndNotForkRepos, 'javascript'),
+//     'Python': filterRepos(publicAndNotForkRepos, 'python'),
+//     'Apps': filterRepos(publicAndNotForkRepos, 'apps'),
+//     'Mobile': filterRepos(publicRepos, 'mobile'),
+//     'UI': filterRepos(publicRepos, 'ui'),
+//     'API': filterRepos(publicAndNotForkRepos, 'api'),
+//     'Library': filterRepos(publicAndNotForkRepos, 'library'),
+//     'Templates': filterRepos(publicAndNotForkRepos, 'template'),
+//     'All': publicAndNotForkRepos,
+//   }
 
-  return repoGroups
-})
+//   return repoGroups
+// })
 
-function filterRepos(repos: Repo[], key: string) {
-  return repos.filter(repo => repo.topics && repo.topics.includes(key))
-}
+// function filterRepos(repos: Repo[], key: string) {
+//   return repos.filter(repo => repo.topics && repo.topics.includes(key))
+// }
 
 // import { fetchRepo } from '../util/github'
 
@@ -86,3 +86,79 @@ function filterRepos(repos: Repo[], key: string) {
 //     })
 //   }
 // })
+
+import { Octokit } from 'octokit'
+import type { H3Event } from 'h3'
+import type { Repo } from '~~/types/project'
+
+// Initialize Octokit instance
+let _octokit: Octokit
+
+export function useOctokit(): Octokit {
+  if (!_octokit) {
+    const token = process.env.NUXT_GITHUB_TOKEN
+    if (!token) {
+      throw new Error('NUXT_GITHUB_TOKEN is not set')
+    }
+    _octokit = new Octokit({ auth: token })
+  }
+  return _octokit
+}
+
+// Define the cached function for fetching repository details
+export const fetchRepo = defineCachedFunction(
+  async (_event: H3Event, owner: string, repo: string) => {
+    const octokit = useOctokit()
+    const { data } = await octokit.rest.repos.get({ owner, repo })
+
+    return {
+      stars: data.stargazers_count,
+      forks: data.forks_count,
+      html_url: data.html_url,
+      created_at: data.created_at,
+      homepage: data.homepage,
+    }
+  },
+  {
+    maxAge: 60 * 5,
+    name: 'githubRepoInfo',
+    getKey: (_event: H3Event, owner: string, repo: string) => `${owner}/${repo}`,
+  },
+)
+
+type RepoGroup = 'Angular' | 'Vue Ecosystem' | 'React' | 'C#' | 'TypeScript' | 'JavaScript' | 'Python' | 'Apps' | 'Mobile' | 'UI' | 'API' | 'Library' | 'Templates' | 'All'
+
+export default defineCachedEventHandler(async (event: H3Event) => {
+  const octokit = useOctokit()
+  const { data } = await octokit.rest.repos.listForAuthenticatedUser({
+    per_page: 100,
+    type: 'owner',
+    sort: 'updated',
+  })
+
+  const publicRepos = data.filter(repo => !repo.private && !repo.archived)
+  const publicAndNotForkRepos = publicRepos.filter(repo => !repo.fork)
+
+  const repoGroups: Record<RepoGroup, Repo[]> = {
+    'Angular': filterRepos(publicAndNotForkRepos, 'angular'),
+    'Vue Ecosystem': filterRepos(publicAndNotForkRepos, 'vue'),
+    'React': filterRepos(publicAndNotForkRepos, 'react'),
+    'C#': filterRepos(publicAndNotForkRepos, 'csharp'),
+    'TypeScript': filterRepos(publicAndNotForkRepos, 'typescript'),
+    'JavaScript': filterRepos(publicAndNotForkRepos, 'javascript'),
+    'Python': filterRepos(publicAndNotForkRepos, 'python'),
+    'Apps': filterRepos(publicAndNotForkRepos, 'apps'),
+    'Mobile': filterRepos(publicRepos, 'mobile'),
+    'UI': filterRepos(publicRepos, 'ui'),
+    'API': filterRepos(publicAndNotForkRepos, 'api'),
+    'Library': filterRepos(publicAndNotForkRepos, 'library'),
+    'Templates': filterRepos(publicAndNotForkRepos, 'template'),
+    'All': publicAndNotForkRepos,
+  }
+
+  return repoGroups
+})
+
+function filterRepos(repos: Repo[], key: string): Repo[] {
+  return repos.filter(repo => repo.topics?.includes(key))
+}

@@ -34,7 +34,6 @@ useHead({
           </h1>
 
           <p
-
             mt-2
             font-dank
             italic
