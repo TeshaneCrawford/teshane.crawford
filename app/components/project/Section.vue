@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const { data: repoGroup } = await useLazyFetch('/api/repos')
-const { data: doc } = await useLazyAsyncData('projects', () => queryContent('/projects/').findOne())
+const { data: repoGroup } = await useFetch('/api/repos')
+const { data: doc } = await useAsyncData('projects', () => queryContent('/projects/').findOne())
 </script>
 
 <template>
