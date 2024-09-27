@@ -13,12 +13,14 @@ if (error.value) {
 
 definePageMeta({
   path: '/blogs/:page(\\d+)?',
+  alias: ['/blog', '/post', '/blogs'],
 })
 
 defineOgImageComponent('BlogPost', {
   title: page.value?.title,
   description: page.value?.description,
   date: page.value?.publishedAt,
+  link: '/blogs',
 })
 
 useHead({

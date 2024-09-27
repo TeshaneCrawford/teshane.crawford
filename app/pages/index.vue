@@ -1,4 +1,9 @@
 <script setup lang="ts">
+definePageMeta({
+  path: '/',
+  alias: ['/home'],
+})
+
 defineOgImageComponent('MainOg')
 useHead({
   title: 'Teshane Crawford - Software Engineer',
