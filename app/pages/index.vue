@@ -41,7 +41,7 @@ useHead({
           </p>
 
           <p class="mb-6 mt-6 text-base text-neutral-600 dark:text-neutral-400">
-            I'm a <code text-p-r-r-r text-xl font-semibold font-dank v-text="`<Software Engineer />`" />. <br
+            I'm a <code text-p-r-r-r font-semibold font-dank v-text="`<Software Engineer />`" />. <br
               class="hidden lg:block">Building Accessible Web and Mobile Apps.
           </p>
 
