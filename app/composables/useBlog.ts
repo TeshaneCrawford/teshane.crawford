@@ -49,19 +49,6 @@ export function useBlog() {
     return (Array.isArray(categories) ? categories : [categories]) as string[]
   })
 
-  // const packagesOptions = computed(() => {
-  //   const packages = allArticles.value.flatMap(item => item.packages || [])
-  //   const dedupe = new Set<string>(packages)
-
-  //   return Array.from(dedupe).sort()
-  // })
-  // const defaultPackages: string[] = []
-  // const packages = computed(() => {
-  //   const packages = route.query['packages[]'] || defaultPackages
-
-  //   return (Array.isArray(packages) ? packages : [packages]) as string[]
-  // })
-
   const authorsOptions = computed(() => {
     const authors = allArticles.value.flatMap(item => item.authors || [])
     const dedupe = new Map<string, Author>()
@@ -129,16 +116,6 @@ export function useBlog() {
 
       return categories.value.some(category => item.categories.includes(category))
     })
-
-    // data = data.filter((item) => {
-    //   if (!packages.value.length)
-    //     return true
-
-    //   if (!item.packages)
-    //     return false
-
-    //   return item.packages.some(pkg => packages.value.includes(pkg))
-    // })
 
     data = data.filter((item) => {
       if (!authors.value.length)

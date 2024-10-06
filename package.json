@@ -21,7 +21,7 @@
     "@nuxthub/core": "^0.7.3",
     "@nuxtjs/seo": "2.0.0-rc.16",
     "@nuxtjs/sitemap": "6.0.0-beta.1",
-    "nuxt": "^3.12.4",
+    "nuxt": "^3.13.2",
     "octokit": "^4.0.2",
     "vue": "latest"
   },

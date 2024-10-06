@@ -76,10 +76,6 @@ const defaultConfig: DefaultConfig = {
 export function useConfig() {
   const appConfig = computed(() => useAppConfig()?.teshanePortfolios || {})
 
-  // const { navKeyFromPath } = useContentHelpers()
-  // const { page } = useContent()
-  // const route = useRoute()
-
   return computed(
     () => {
       const processedConfig = defu(appConfig.value, defaultConfig)
@@ -90,8 +86,6 @@ export function useConfig() {
         ...processedConfig,
         main: {
           ...main,
-          // ...navKeyFromPath(route.path, 'main', navigation.value || []),
-          // ...page.value?.main,
         } as typeof main,
       }
     },

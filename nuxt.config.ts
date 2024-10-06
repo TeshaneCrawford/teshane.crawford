@@ -39,7 +39,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Teshane Crawford',
+      // title: 'Teshane Crawford',
       meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
       viewport: 'width=device-width,initial-scale=1',
       link: [
