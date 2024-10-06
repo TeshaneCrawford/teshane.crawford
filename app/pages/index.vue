@@ -6,7 +6,7 @@ definePageMeta({
 
 defineOgImageComponent('MainOg')
 useHead({
-  title: 'Teshane Crawford - Software Engineer',
+  title: '',
   meta: [
     {
       name: 'description',
