@@ -21,16 +21,8 @@ useHead({
     <div class="relative z-20 mx-auto mt-16 max-w-4xl w-full lg:mt-12 md:mt-24 md:px-7 xl:px-0">
       <div class="flex flex-col items-center md:flex-row">
         <div class="relative w-full">
-          <!-- <h1
-            class="mb-5 text-3xl text-gray-8 font-bold leading-tight lg:text-6xl md:text-4xl sm:text-4xl dark:text-white"
-          >
-            Teshane Crawford.
-          </h1> -->
           <h1 class="mb-6 text-4xl font-bold md:text-6xl">
             Teshane Crawford
-            <!-- <span class="font-medium text-sm flex flex-wrap inline-flex items-center">
-        Software Engineer <span class="mx-2">•</span> 🇯🇲 living in 🇺🇸 🗽 New York, USA
-      </span> -->
             <span class="flex inline-flex flex-wrap items-center text-sm font-medium">
               Software Engineer <span class="mx-2">•</span> 🇯🇲 living in Portland, JA
             </span>
@@ -80,9 +72,6 @@ useHead({
               <i i-logos-vue mr-1 h-1.1em w-1.1em />
               <a linkInProse o="#64b687" href="https://vuejs.org/" target="_blank"><strong>Vue.js</strong></a>,
               <span mr-1 />
-              <!-- <i i-my-logos-angular-icon mr-1 />
-      <a trans linear-text shape-bl class="c-context::#c3002f" from="#9717E7" via="#F20755" to="#FF31D9"
-        href="https://angular.dev/" target="_blank"><strong> Angular</strong></a>, -->
               <icon name="i-logos-angular-icon" mr-1 />
               <a linear-text shape-bl trans class="c-context::#c3002f" from="#9717E7" via="#F20755" to="#FF31D9"
                 href="https://angular.dev/" target="_blank"><strong> Angular</strong></a>,
