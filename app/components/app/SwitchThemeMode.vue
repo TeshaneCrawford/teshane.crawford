@@ -2,7 +2,7 @@
 const colorMode = useColorMode()
 
 function toggleDark(event: MouseEvent) {
-  const isAppearanceTransition = document.startViewTransition
+  const isAppearanceTransition = document.startViewTransition()
     && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   if (!isAppearanceTransition) {
@@ -17,7 +17,6 @@ function toggleDark(event: MouseEvent) {
     Math.max(x, innerWidth - x),
     Math.max(y, innerHeight - y),
   )
-  // @ts-expect-error: Transition API
   const transition = document.startViewTransition(async () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     colorMode.value === 'light' ? (colorMode.preference = 'dark') : (colorMode.preference = 'light')
