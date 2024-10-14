@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: doc } = await useLazyAsyncData('chat', () => queryContent('/chat/').findOne())
+const { data: doc } = useAsyncData('chat', () => queryContent('/chat/').findOne())
 </script>
 
 <template>
